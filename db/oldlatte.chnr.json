@@ -4,7 +4,7 @@
   "avatar": "",
   "version": "3.5.1",
   "createdTime": "2021-10-17 14:30:13",
-  "updatedTime": "2021-11-6 18:35:27",
+  "updatedTime": "2021-11-6 18:37:27",
   "profile": {
     "default": {
       "db": "2C17FA15-B29B-498D-A1FB-9C8E7B5A92CD",
@@ -9099,12 +9099,12 @@
             "id": "b0f2de0a-3e2b-4d57-a714-0a5fefbf2a15",
             "shape": "group",
             "position": {
-              "x": 638.9999999999959,
-              "y": -1210.0000000000027
+              "x": 618.9999999999959,
+              "y": -1210.0000000000048
             },
             "label": "商品",
             "size": {
-              "width": 1490,
+              "width": 1510,
               "height": 700
             },
             "children": [
@@ -9128,12 +9128,12 @@
             "id": "9487664e-75bd-4705-b4f5-bae6fd1ba6c7",
             "shape": "group",
             "position": {
-              "x": 638.9999999999959,
-              "y": -469.9999999999808
+              "x": 618.9999999999959,
+              "y": -460.00000000000404
             },
             "label": "仓库",
             "size": {
-              "width": 1490,
+              "width": 1510,
               "height": 330
             },
             "children": [
@@ -9151,7 +9151,7 @@
             },
             "label": "用户",
             "size": {
-              "width": 1340,
+              "width": 1400,
               "height": 410
             },
             "children": [
@@ -9208,12 +9208,12 @@
             "id": "a159b1f4-7cc0-4666-9f09-6fee0b72d131",
             "shape": "group",
             "position": {
-              "x": 1148.999999999996,
-              "y": -72.50000000000912
+              "x": 1128.999999999996,
+              "y": -72.50000000000918
             },
             "label": "通用",
             "size": {
-              "width": 980,
+              "width": 1000,
               "height": 410
             },
             "children": [
@@ -9246,17 +9246,6 @@
             "parent": "613fe5bb-cfb0-40a4-98e5-556bdf7e2035"
           },
           {
-            "id": "aa3788c1-f461-4f32-a7c4-1e3031eacc6f",
-            "shape": "table",
-            "position": {
-              "x": 1541.499999999996,
-              "y": 102.49999999997789
-            },
-            "count": 0,
-            "originKey": "48002AC1-1F3A-4E3E-BE0C-69AC9938A179",
-            "parent": "a159b1f4-7cc0-4666-9f09-6fee0b72d131"
-          },
-          {
             "id": "c2c96df7-32ac-4619-9e6e-ff8ff774f3d6",
             "shape": "table",
             "position": {
@@ -9277,28 +9266,6 @@
             "count": 0,
             "originKey": "37D981A2-696B-4D79-8F0A-BD68A4DBEC08",
             "parent": "613fe5bb-cfb0-40a4-98e5-556bdf7e2035"
-          },
-          {
-            "id": "4474c07b-4f6b-4c1b-95f8-2915e403be3e",
-            "shape": "table",
-            "position": {
-              "x": 1189.999999999996,
-              "y": 116.99999999998175
-            },
-            "count": 0,
-            "originKey": "C1A09B13-A36E-43F8-8937-33D05A268DDD",
-            "parent": "a159b1f4-7cc0-4666-9f09-6fee0b72d131"
-          },
-          {
-            "id": "348bd63c-bf6f-49bc-9228-c91ada4881f2",
-            "shape": "table",
-            "position": {
-              "x": 1626.499999999996,
-              "y": -44.00000000001825
-            },
-            "count": 0,
-            "originKey": "205B6728-D054-4F68-9B61-E53C75B500F6",
-            "parent": "a159b1f4-7cc0-4666-9f09-6fee0b72d131"
           },
           {
             "id": "912f0ae9-ba77-4f80-be86-5812aec44c2e",
@@ -9334,17 +9301,6 @@
             "parent": "613fe5bb-cfb0-40a4-98e5-556bdf7e2035"
           },
           {
-            "id": "75245fea-1350-482c-898a-80a54a9530cb",
-            "shape": "table",
-            "position": {
-              "x": 582,
-              "y": 136.999999999987
-            },
-            "count": 0,
-            "originKey": "E0DF7775-5459-47C3-A8CC-478937041949",
-            "parent": "613fe5bb-cfb0-40a4-98e5-556bdf7e2035"
-          },
-          {
             "id": "be63f2d1-ad5a-4852-a25e-c514524648e9",
             "shape": "table",
             "position": {
@@ -9354,17 +9310,6 @@
             "count": 0,
             "originKey": "B3B89035-E370-480A-A86D-45F3B4BA897C",
             "parent": "79df456b-0326-4680-884f-bd2e37285fa6"
-          },
-          {
-            "id": "c65c664d-f541-4cdd-9a9f-96f404b74728",
-            "shape": "table",
-            "position": {
-              "x": 827.5000000000059,
-              "y": -401.49999999998715
-            },
-            "count": 0,
-            "originKey": "59E96447-6334-4CCD-AFCA-7523C18C36B4",
-            "parent": "9487664e-75bd-4705-b4f5-bae6fd1ba6c7"
           },
           {
             "id": "d063c5ac-cddf-429c-b60e-45b19f2ff1d4",
@@ -9437,7 +9382,7 @@
             "vertices": [
               {
                 "x": 1626.0000000000027,
-                "y": -1052.000000000004
+                "y": -1052.0000000000055
               }
             ],
             "fillColor": "#ACDAFC",
@@ -9600,7 +9545,7 @@
             "shape": "table",
             "position": {
               "x": 704.5000000000045,
-              "y": -756.5000000000148
+              "y": -756.5000000000161
             },
             "count": 0,
             "originKey": "605BA5CB-8E7C-430C-9AC0-B2F5E8DF0600",
@@ -9643,36 +9588,14 @@
             }
           },
           {
-            "id": "fb9f7382-b5bf-4931-b1c6-dfd724c3b4b8",
-            "shape": "table",
-            "position": {
-              "x": 1187.4999999999964,
-              "y": -861.0000000000148
-            },
-            "count": 0,
-            "originKey": "008CAE84-21A3-4D15-887B-95B26844DC59",
-            "parent": "b0f2de0a-3e2b-4d57-a714-0a5fefbf2a15"
-          },
-          {
             "id": "b18d6f88-ab1d-4e0b-bd0b-7ddadd25dfc7",
             "shape": "table",
             "position": {
               "x": 1187.4999999999964,
-              "y": -1013.0000000000148
+              "y": -1013.0000000000161
             },
             "count": 0,
             "originKey": "52C151E7-4645-4E10-B8E7-F5D4D76FB5E8",
-            "parent": "b0f2de0a-3e2b-4d57-a714-0a5fefbf2a15"
-          },
-          {
-            "id": "30f6a374-686e-494b-8c20-f2220171d63d",
-            "shape": "table",
-            "position": {
-              "x": 667.5000000000045,
-              "y": -1092.0000000000148
-            },
-            "count": 0,
-            "originKey": "87645574-DA72-4964-BDEE-4493BD397BE8",
             "parent": "b0f2de0a-3e2b-4d57-a714-0a5fefbf2a15"
           },
           {
@@ -9680,29 +9603,18 @@
             "shape": "table",
             "position": {
               "x": 1189.999999999996,
-              "y": -697
+              "y": -697.0000000000014
             },
             "count": 0,
             "originKey": "AB2F18CE-9EFD-491E-9C85-EA7713247CEB",
             "parent": "b0f2de0a-3e2b-4d57-a714-0a5fefbf2a15"
           },
           {
-            "id": "ff96a33c-d7fd-4a89-8666-1821bb497226",
-            "shape": "table",
-            "position": {
-              "x": 1503.500000000004,
-              "y": -401.49999999998715
-            },
-            "count": 0,
-            "originKey": "C8005997-652A-46F2-874B-56226E7AABBE",
-            "parent": "9487664e-75bd-4705-b4f5-bae6fd1ba6c7"
-          },
-          {
             "id": "b187db46-7b6f-425a-ae20-5ff9eb5c742c",
             "shape": "table",
             "position": {
               "x": 1676.0000000000027,
-              "y": -1120.000000000004
+              "y": -1120.0000000000055
             },
             "count": 0,
             "originKey": "887F9556-9737-4154-BD4C-1B421FFA0CFD",
@@ -9713,11 +9625,99 @@
             "shape": "table",
             "position": {
               "x": 1697.9999999999945,
-              "y": -768.0000000000148
+              "y": -768.0000000000161
             },
             "count": 0,
             "originKey": "FA55B349-8254-40CE-8960-B5AABC9BC40B",
             "parent": "b0f2de0a-3e2b-4d57-a714-0a5fefbf2a15"
+          },
+          {
+            "id": "fb9f7382-b5bf-4931-b1c6-dfd724c3b4b8",
+            "shape": "table",
+            "position": {
+              "x": 1187.4999999999964,
+              "y": -861.0000000000161
+            },
+            "count": 0,
+            "originKey": "008CAE84-21A3-4D15-887B-95B26844DC59",
+            "parent": "b0f2de0a-3e2b-4d57-a714-0a5fefbf2a15"
+          },
+          {
+            "id": "30f6a374-686e-494b-8c20-f2220171d63d",
+            "shape": "table",
+            "position": {
+              "x": 667.5000000000045,
+              "y": -1092.0000000000161
+            },
+            "count": 0,
+            "originKey": "87645574-DA72-4964-BDEE-4493BD397BE8",
+            "parent": "b0f2de0a-3e2b-4d57-a714-0a5fefbf2a15"
+          },
+          {
+            "id": "c65c664d-f541-4cdd-9a9f-96f404b74728",
+            "shape": "table",
+            "position": {
+              "x": 827.5000000000059,
+              "y": -374.0000000000082
+            },
+            "count": 0,
+            "originKey": "59E96447-6334-4CCD-AFCA-7523C18C36B4",
+            "parent": "9487664e-75bd-4705-b4f5-bae6fd1ba6c7"
+          },
+          {
+            "id": "ff96a33c-d7fd-4a89-8666-1821bb497226",
+            "shape": "table",
+            "position": {
+              "x": 1530.999999999996,
+              "y": -374.0000000000082
+            },
+            "count": 0,
+            "originKey": "C8005997-652A-46F2-874B-56226E7AABBE",
+            "parent": "9487664e-75bd-4705-b4f5-bae6fd1ba6c7"
+          },
+          {
+            "id": "348bd63c-bf6f-49bc-9228-c91ada4881f2",
+            "shape": "table",
+            "position": {
+              "x": 1626.499999999996,
+              "y": -44.00000000001825
+            },
+            "count": 0,
+            "originKey": "205B6728-D054-4F68-9B61-E53C75B500F6",
+            "parent": "a159b1f4-7cc0-4666-9f09-6fee0b72d131"
+          },
+          {
+            "id": "75245fea-1350-482c-898a-80a54a9530cb",
+            "shape": "table",
+            "position": {
+              "x": 582,
+              "y": 136.999999999987
+            },
+            "count": 0,
+            "originKey": "E0DF7775-5459-47C3-A8CC-478937041949",
+            "parent": "613fe5bb-cfb0-40a4-98e5-556bdf7e2035"
+          },
+          {
+            "id": "4474c07b-4f6b-4c1b-95f8-2915e403be3e",
+            "shape": "table",
+            "position": {
+              "x": 1189.999999999996,
+              "y": 116.99999999998175
+            },
+            "count": 0,
+            "originKey": "C1A09B13-A36E-43F8-8937-33D05A268DDD",
+            "parent": "a159b1f4-7cc0-4666-9f09-6fee0b72d131"
+          },
+          {
+            "id": "aa3788c1-f461-4f32-a7c4-1e3031eacc6f",
+            "shape": "table",
+            "position": {
+              "x": 1541.499999999996,
+              "y": 102.49999999997789
+            },
+            "count": 0,
+            "originKey": "48002AC1-1F3A-4E3E-BE0C-69AC9938A179",
+            "parent": "a159b1f4-7cc0-4666-9f09-6fee0b72d131"
           }
         ]
       },
