@@ -4,7 +4,7 @@
   "avatar": "",
   "version": "3.5.1",
   "createdTime": "2021-10-17 14:30:13",
-  "updatedTime": "2021-11-6 14:33:13",
+  "updatedTime": "2021-11-6 17:31:27",
   "profile": {
     "default": {
       "db": "2C17FA15-B29B-498D-A1FB-9C8E7B5A92CD",
@@ -113,23 +113,6 @@
           "id": "99138386-F9AE-464D-A110-AEEFE4A33C47"
         },
         {
-          "defKey": "deleted_flag",
-          "defName": "删除标识（0：否，1：是）",
-          "comment": "",
-          "type": "",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "0",
-          "hideInGraph": true,
-          "refDict": "",
-          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
-          "id": "E4099681-2F17-42C2-94A0-2F04A6880160",
-          "uiHint": ""
-        },
-        {
           "defKey": "tenant_id",
           "defName": "租户id",
           "comment": "",
@@ -145,6 +128,23 @@
           "refDict": "",
           "uiHint": "",
           "id": "7B67E2B9-FE4C-4639-8D65-6FD9AD2F8433"
+        },
+        {
+          "defKey": "deleted_flag",
+          "defName": "删除标识（0：否，1：是）",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "0",
+          "hideInGraph": true,
+          "refDict": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "E4099681-2F17-42C2-94A0-2F04A6880160",
+          "uiHint": ""
         }
       ],
       "entityInitProperties": {
@@ -756,23 +756,6 @@
           "id": "5ECA3F62-DD01-45C6-8951-5A1E80A6CA1A"
         },
         {
-          "defKey": "deleted_flag",
-          "defName": "删除标识（0：否，1：是）",
-          "comment": "",
-          "type": "",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "0",
-          "hideInGraph": true,
-          "refDict": "",
-          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
-          "id": "B0272ECE-B761-4EEF-A6C8-6027BB573A5A",
-          "uiHint": ""
-        },
-        {
           "defKey": "tenant_id",
           "defName": "租户id",
           "comment": "",
@@ -788,12 +771,29 @@
           "refDict": "",
           "uiHint": "",
           "id": "920BB3D7-0ABC-4983-A49A-19BF6268E44C"
+        },
+        {
+          "defKey": "deleted_flag",
+          "defName": "删除标识（0：否，1：是）",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "0",
+          "hideInGraph": true,
+          "refDict": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "B0272ECE-B761-4EEF-A6C8-6027BB573A5A",
+          "uiHint": ""
         }
       ],
       "correlations": [],
       "indexes": [
         {
-          "defKey": "idx_phone_no_tenant_id",
+          "defKey": "idx_phone_no",
           "defName": null,
           "unique": true,
           "comment": "手机号索引",
@@ -807,12 +807,17 @@
               "fieldDefKey": "920BB3D7-0ABC-4983-A49A-19BF6268E44C",
               "ascOrDesc": "A",
               "id": "DB2DF581-4407-448E-BCC5-128031CDFAE9"
+            },
+            {
+              "fieldDefKey": "B0272ECE-B761-4EEF-A6C8-6027BB573A5A",
+              "ascOrDesc": "A",
+              "id": "0062D2CF-3ED1-407F-9BCF-6A6C2D85361B"
             }
           ],
           "id": "0495AEAF-4114-445D-8466-A7BF68C76075"
         },
         {
-          "defKey": "idx_open_id_tenant_id",
+          "defKey": "idx_open_id",
           "defName": null,
           "unique": true,
           "comment": "微信openId索引",
@@ -826,12 +831,17 @@
               "fieldDefKey": "920BB3D7-0ABC-4983-A49A-19BF6268E44C",
               "ascOrDesc": "A",
               "id": "72BBFE2F-3B4E-4BE9-A0DE-B6B1B4AC4D3A"
+            },
+            {
+              "fieldDefKey": "B0272ECE-B761-4EEF-A6C8-6027BB573A5A",
+              "ascOrDesc": "A",
+              "id": "E0F0EBDE-03FE-4E16-8812-D789684A871E"
             }
           ],
           "id": "9D692332-A5CB-4869-86E5-77DBE83CBC76"
         },
         {
-          "defKey": "idx_session_key_tenant_id",
+          "defKey": "idx_session_key",
           "defName": null,
           "unique": true,
           "comment": "微信sessionKey索引",
@@ -845,6 +855,11 @@
               "fieldDefKey": "920BB3D7-0ABC-4983-A49A-19BF6268E44C",
               "ascOrDesc": "A",
               "id": "DB79947D-5410-46F9-900F-5E8C687A36D4"
+            },
+            {
+              "fieldDefKey": "B0272ECE-B761-4EEF-A6C8-6027BB573A5A",
+              "ascOrDesc": "A",
+              "id": "3D1A873E-81D3-4DF4-A3D9-303232B0AF66"
             }
           ],
           "id": "078A83A8-CDB5-44EF-BE84-F5692A68F991"
@@ -1090,23 +1105,6 @@
           "id": "29CBCD2F-F5D7-4C24-9483-2AC18B3CDDB5"
         },
         {
-          "defKey": "deleted_flag",
-          "defName": "删除标识（0：否，1：是）",
-          "comment": "",
-          "type": "",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "0",
-          "hideInGraph": true,
-          "refDict": "",
-          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
-          "id": "4913D5A9-D297-4251-9D33-F2079A7DF95D",
-          "uiHint": ""
-        },
-        {
           "defKey": "tenant_id",
           "defName": "租户id",
           "comment": "",
@@ -1122,12 +1120,29 @@
           "refDict": "",
           "uiHint": "",
           "id": "ECB854B4-08E9-4353-B5E3-8A912DB715BC"
+        },
+        {
+          "defKey": "deleted_flag",
+          "defName": "删除标识（0：否，1：是）",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "0",
+          "hideInGraph": true,
+          "refDict": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "4913D5A9-D297-4251-9D33-F2079A7DF95D",
+          "uiHint": ""
         }
       ],
       "correlations": [],
       "indexes": [
         {
-          "defKey": "idx_role_no_tenant_id",
+          "defKey": "idx_role_no",
           "defName": null,
           "unique": true,
           "comment": "角色编码索引",
@@ -1141,6 +1156,11 @@
               "fieldDefKey": "ECB854B4-08E9-4353-B5E3-8A912DB715BC",
               "ascOrDesc": "A",
               "id": "32016BEF-E5F4-40C7-A3C7-93DFC979A2EF"
+            },
+            {
+              "fieldDefKey": "4913D5A9-D297-4251-9D33-F2079A7DF95D",
+              "ascOrDesc": "A",
+              "id": "6C4ECE91-3FF9-4E5B-9500-C5BBCBDD482B"
             }
           ],
           "id": "647D59C7-92A4-48DA-A187-DFC90651FD77"
@@ -1418,23 +1438,6 @@
           "uiHint": ""
         },
         {
-          "defKey": "deleted_flag",
-          "defName": "删除标识（0：否，1：是）",
-          "comment": "",
-          "type": "",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "0",
-          "hideInGraph": true,
-          "refDict": "",
-          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
-          "id": "09C8C6A5-B766-489F-81EC-D04339DF8661",
-          "uiHint": ""
-        },
-        {
           "defKey": "tenant_id",
           "defName": "租户id",
           "comment": "",
@@ -1450,12 +1453,29 @@
           "refDict": "",
           "uiHint": "",
           "id": "E5750321-8419-430A-9FDB-90781C0817E3"
+        },
+        {
+          "defKey": "deleted_flag",
+          "defName": "删除标识（0：否，1：是）",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "0",
+          "hideInGraph": true,
+          "refDict": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "09C8C6A5-B766-489F-81EC-D04339DF8661",
+          "uiHint": ""
         }
       ],
       "correlations": [],
       "indexes": [
         {
-          "defKey": "idx_parent_menu_id_tenant_id",
+          "defKey": "idx_parent_menu_id",
           "defName": null,
           "unique": false,
           "comment": "父菜单id索引",
@@ -1469,12 +1489,17 @@
               "fieldDefKey": "E5750321-8419-430A-9FDB-90781C0817E3",
               "ascOrDesc": "A",
               "id": "38CD8E6C-1823-458C-B320-CA64D06EE72D"
+            },
+            {
+              "fieldDefKey": "09C8C6A5-B766-489F-81EC-D04339DF8661",
+              "ascOrDesc": "A",
+              "id": "033C57E6-0D58-4638-B790-6C0682D86B52"
             }
           ],
           "id": "2D04DAFC-09DC-4D8A-AD25-D649D368A288"
         },
         {
-          "defKey": "idx_menu_no_tennant_id",
+          "defKey": "idx_menu_no",
           "defName": null,
           "unique": false,
           "comment": "菜单编号索引",
@@ -1488,6 +1513,11 @@
               "fieldDefKey": "E5750321-8419-430A-9FDB-90781C0817E3",
               "ascOrDesc": "A",
               "id": "DC8B7AF9-7757-431C-896F-B5DA8F710BB9"
+            },
+            {
+              "fieldDefKey": "09C8C6A5-B766-489F-81EC-D04339DF8661",
+              "ascOrDesc": "A",
+              "id": "F341CECB-86D9-41AF-BDBB-794581EEFCE6"
             }
           ],
           "id": "F8AD5CEE-D380-4C43-954D-68C1635B7A55"
@@ -1733,23 +1763,6 @@
           "id": "452219D6-370D-4CB3-A2E3-E53718A8335C"
         },
         {
-          "defKey": "deleted_flag",
-          "defName": "删除标识（0：否，1：是）",
-          "comment": "",
-          "type": "",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "0",
-          "hideInGraph": true,
-          "refDict": "",
-          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
-          "id": "AD84A5E3-2F54-47E8-876D-39484C747B77",
-          "uiHint": ""
-        },
-        {
           "defKey": "tenant_id",
           "defName": "租户id",
           "comment": "",
@@ -1765,29 +1778,29 @@
           "refDict": "",
           "uiHint": "",
           "id": "426CC59F-BAB8-4E81-9E0F-2866BE9AB68B"
-        }
-      ],
-      "correlations": [
-        {
-          "myField": "0D58E17A-53EC-4B47-8F36-37668D55B4C3",
-          "refEntity": "08278BA5-1C7E-489E-9EB6-2D78D6822104",
-          "refField": "21A332B6-BAF9-4F45-82B4-FBD56A0D3F21",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
         },
         {
-          "myField": "34DED86B-548B-4F47-9430-4683997072BD",
-          "refEntity": "37D981A2-696B-4D79-8F0A-BD68A4DBEC08",
-          "refField": "0ECCF6BF-E2B4-4791-9EF3-1BE2EB40F958",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
+          "defKey": "deleted_flag",
+          "defName": "删除标识（0：否，1：是）",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "0",
+          "hideInGraph": true,
+          "refDict": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "AD84A5E3-2F54-47E8-876D-39484C747B77",
+          "uiHint": ""
         }
       ],
+      "correlations": [],
       "indexes": [
         {
-          "defKey": "idx_role_id_tenant_id",
+          "defKey": "idx_role_id",
           "defName": null,
           "unique": false,
           "comment": "角色id索引",
@@ -1801,12 +1814,17 @@
               "fieldDefKey": "426CC59F-BAB8-4E81-9E0F-2866BE9AB68B",
               "ascOrDesc": "A",
               "id": "85DBD34A-B798-4B38-B63E-59D4D0160980"
+            },
+            {
+              "fieldDefKey": "AD84A5E3-2F54-47E8-876D-39484C747B77",
+              "ascOrDesc": "A",
+              "id": "53869902-58B8-4AA3-BAEE-666B25096C0C"
             }
           ],
           "id": "41E824D2-6B6C-4D17-9D88-92FABBB3C7BC"
         },
         {
-          "defKey": "idx_user_id_tenant_id",
+          "defKey": "idx_user_id",
           "defName": null,
           "unique": false,
           "comment": "用户id索引",
@@ -1820,6 +1838,11 @@
               "fieldDefKey": "426CC59F-BAB8-4E81-9E0F-2866BE9AB68B",
               "ascOrDesc": "A",
               "id": "C528E80A-DD63-4BFC-8D13-82FD1696C89F"
+            },
+            {
+              "fieldDefKey": "AD84A5E3-2F54-47E8-876D-39484C747B77",
+              "ascOrDesc": "A",
+              "id": "C0D53656-25C1-4CD6-A0B5-E12633813CDE"
             }
           ],
           "id": "BE0A5044-1EA6-4005-9A51-621339DB9DD0"
@@ -2065,23 +2088,6 @@
           "id": "67BFB121-1CBD-488E-B8F8-B754A437B642"
         },
         {
-          "defKey": "deleted_flag",
-          "defName": "删除标识（0：否，1：是）",
-          "comment": "",
-          "type": "",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "0",
-          "hideInGraph": true,
-          "refDict": "",
-          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
-          "id": "E8FAD4F1-EF63-4ACA-B558-272C7F94A15A",
-          "uiHint": ""
-        },
-        {
           "defKey": "tenant_id",
           "defName": "租户id",
           "comment": "",
@@ -2097,29 +2103,29 @@
           "refDict": "",
           "uiHint": "",
           "id": "71B3D1B8-1351-4211-8CD7-9F00D64BF8AF"
-        }
-      ],
-      "correlations": [
-        {
-          "myField": "09DC7C65-B4BE-45CA-AB1E-C90D770FAD87",
-          "refEntity": "E0DF7775-5459-47C3-A8CC-478937041949",
-          "refField": "1AE8401A-1901-4974-A2D6-F81C201100F9",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
         },
         {
-          "myField": "F2650010-F2D7-47CE-B904-0B317516FABD",
-          "refEntity": "08278BA5-1C7E-489E-9EB6-2D78D6822104",
-          "refField": "21A332B6-BAF9-4F45-82B4-FBD56A0D3F21",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
+          "defKey": "deleted_flag",
+          "defName": "删除标识（0：否，1：是）",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "0",
+          "hideInGraph": true,
+          "refDict": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "E8FAD4F1-EF63-4ACA-B558-272C7F94A15A",
+          "uiHint": ""
         }
       ],
+      "correlations": [],
       "indexes": [
         {
-          "defKey": "idx_role_id_tenant_id",
+          "defKey": "idx_role_id",
           "defName": null,
           "unique": false,
           "comment": "角色id索引",
@@ -2133,12 +2139,17 @@
               "fieldDefKey": "71B3D1B8-1351-4211-8CD7-9F00D64BF8AF",
               "ascOrDesc": "A",
               "id": "2BA63E78-72AE-4BFD-8A25-B8AF2E1DC080"
+            },
+            {
+              "fieldDefKey": "E8FAD4F1-EF63-4ACA-B558-272C7F94A15A",
+              "ascOrDesc": "A",
+              "id": "D0225E81-3C57-4E0D-814D-9F16C82AA66C"
             }
           ],
           "id": "3344A1B1-9F12-4E31-89F9-680B3ABD7C44"
         },
         {
-          "defKey": "idx_menu_id_tenant_id",
+          "defKey": "idx_menu_id",
           "defName": null,
           "unique": false,
           "comment": "菜单id索引",
@@ -2152,6 +2163,11 @@
               "fieldDefKey": "71B3D1B8-1351-4211-8CD7-9F00D64BF8AF",
               "ascOrDesc": "A",
               "id": "84E51458-4CDA-47A1-9016-43A900D4B9AC"
+            },
+            {
+              "fieldDefKey": "E8FAD4F1-EF63-4ACA-B558-272C7F94A15A",
+              "ascOrDesc": "A",
+              "id": "16D62630-EE47-4E84-9476-7682A3458932"
             }
           ],
           "id": "FF8FBCF4-4665-4DEA-A355-D16B92316373"
@@ -2429,23 +2445,6 @@
           "id": "BCB0FDA2-1CB8-4A7F-862A-D07A09ED5DA2"
         },
         {
-          "defKey": "deleted_flag",
-          "defName": "删除标识（0：否，1：是）",
-          "comment": "",
-          "type": "",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "0",
-          "hideInGraph": true,
-          "refDict": "",
-          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
-          "id": "1664610D-1385-4748-9B46-EFA27FB99F1F",
-          "uiHint": ""
-        },
-        {
           "defKey": "tenant_id",
           "defName": "租户id",
           "comment": "",
@@ -2461,12 +2460,29 @@
           "refDict": "",
           "uiHint": "",
           "id": "CB8CEAFC-0AD7-4600-812E-9EAD946725BB"
+        },
+        {
+          "defKey": "deleted_flag",
+          "defName": "删除标识（0：否，1：是）",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "0",
+          "hideInGraph": true,
+          "refDict": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "1664610D-1385-4748-9B46-EFA27FB99F1F",
+          "uiHint": ""
         }
       ],
       "correlations": [],
       "indexes": [
         {
-          "defKey": "idx_merchant_no_tenant_id",
+          "defKey": "idx_merchant_no",
           "defName": null,
           "unique": true,
           "comment": "商户编号索引",
@@ -2480,6 +2496,11 @@
               "fieldDefKey": "CB8CEAFC-0AD7-4600-812E-9EAD946725BB",
               "ascOrDesc": "A",
               "id": "53769EC7-98C6-4E01-B18E-4442794C8AB4"
+            },
+            {
+              "fieldDefKey": "1664610D-1385-4748-9B46-EFA27FB99F1F",
+              "ascOrDesc": "A",
+              "id": "E541738A-B847-4F80-B85A-656E4D69CF19"
             }
           ],
           "id": "5748D9C9-78E5-4D34-B027-A93DABE74D81"
@@ -2853,23 +2874,6 @@
           "id": "D2336BCC-1EA4-4704-8095-0A20DADB56CD"
         },
         {
-          "defKey": "deleted_flag",
-          "defName": "删除标识（0：否，1：是）",
-          "comment": "",
-          "type": "",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "0",
-          "hideInGraph": true,
-          "refDict": "",
-          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
-          "id": "2DF9A775-D80A-435C-AF2E-34FEF2A2E09D",
-          "uiHint": ""
-        },
-        {
           "defKey": "tenant_id",
           "defName": "租户id",
           "comment": "",
@@ -2885,21 +2889,29 @@
           "refDict": "",
           "uiHint": "",
           "id": "0955CD51-C430-4AF7-8C72-1EF770C49DA3"
-        }
-      ],
-      "correlations": [
+        },
         {
-          "myField": "0EBAC553-7F1B-4338-B435-54D89E3E3D4E",
-          "refEntity": "A02640EE-584C-4FB4-9D04-741AA4E4D79F",
-          "refField": "AA30BD7B-F3C8-4B4F-A7EE-847EAD2A474D",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
+          "defKey": "deleted_flag",
+          "defName": "删除标识（0：否，1：是）",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "0",
+          "hideInGraph": true,
+          "refDict": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "2DF9A775-D80A-435C-AF2E-34FEF2A2E09D",
+          "uiHint": ""
         }
       ],
+      "correlations": [],
       "indexes": [
         {
-          "defKey": "idx_merchant_id_tenant_id",
+          "defKey": "idx_merchant_id",
           "defName": null,
           "unique": false,
           "comment": "商户id索引",
@@ -2913,12 +2925,17 @@
               "fieldDefKey": "0955CD51-C430-4AF7-8C72-1EF770C49DA3",
               "ascOrDesc": "A",
               "id": "BD426069-62B9-4887-906A-342AD6ABD32D"
+            },
+            {
+              "fieldDefKey": "2DF9A775-D80A-435C-AF2E-34FEF2A2E09D",
+              "ascOrDesc": "A",
+              "id": "DB890A9D-09B6-46AD-8AFC-E4DBB8E696D5"
             }
           ],
           "id": "7048195A-AC8F-4E0A-A9BC-D2B22F256109"
         },
         {
-          "defKey": "idx_order_no_tenant_id",
+          "defKey": "idx_order_no",
           "defName": null,
           "unique": true,
           "comment": "订单编号索引",
@@ -2932,12 +2949,17 @@
               "fieldDefKey": "0955CD51-C430-4AF7-8C72-1EF770C49DA3",
               "ascOrDesc": "A",
               "id": "4AC88517-4886-404A-92C0-E317A6C00286"
+            },
+            {
+              "fieldDefKey": "2DF9A775-D80A-435C-AF2E-34FEF2A2E09D",
+              "ascOrDesc": "A",
+              "id": "6A44B00B-D273-48C4-B783-5ABC6A42EF62"
             }
           ],
           "id": "C1345856-9E0F-47D7-A92C-6F7F253AFD74"
         },
         {
-          "defKey": "idx_dealer_id_tenant_id",
+          "defKey": "idx_dealer_id",
           "defName": null,
           "unique": false,
           "comment": "经手人索引",
@@ -2951,6 +2973,11 @@
               "fieldDefKey": "0955CD51-C430-4AF7-8C72-1EF770C49DA3",
               "ascOrDesc": "A",
               "id": "66077E4C-6005-4252-BBA6-ACA826DD32E9"
+            },
+            {
+              "fieldDefKey": "2DF9A775-D80A-435C-AF2E-34FEF2A2E09D",
+              "ascOrDesc": "A",
+              "id": "48CDED93-F9F9-4540-9734-BBF0FA888F12"
             }
           ],
           "id": "01DAABF9-8E2D-4BB5-B97F-14ED367CFEC7"
@@ -3292,23 +3319,6 @@
           "id": "A1A3B7D0-5B2E-4A84-9A09-D147D2549D78"
         },
         {
-          "defKey": "deleted_flag",
-          "defName": "删除标识（0：否，1：是）",
-          "comment": "",
-          "type": "",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "0",
-          "hideInGraph": true,
-          "refDict": "",
-          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
-          "id": "D02DA55D-CF3E-4B0A-A3E9-52E3E5A19874",
-          "uiHint": ""
-        },
-        {
           "defKey": "tenant_id",
           "defName": "租户id",
           "comment": "",
@@ -3324,21 +3334,29 @@
           "refDict": "",
           "uiHint": "",
           "id": "5D324903-2FBC-488F-B973-EE3E9E8394C8"
-        }
-      ],
-      "correlations": [
+        },
         {
-          "myField": "A8F1D20D-5C93-4B9D-BC2A-E1E6B9B23F5D",
-          "refEntity": "6E92F6DC-1DC0-4D22-9A26-4164DA03E2F2",
-          "refField": "1779BD01-ADD7-4420-B0F2-36772074A7CD",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
+          "defKey": "deleted_flag",
+          "defName": "删除标识（0：否，1：是）",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "0",
+          "hideInGraph": true,
+          "refDict": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "D02DA55D-CF3E-4B0A-A3E9-52E3E5A19874",
+          "uiHint": ""
         }
       ],
+      "correlations": [],
       "indexes": [
         {
-          "defKey": "idx_order_id_tenant_id",
+          "defKey": "idx_order_id",
           "defName": null,
           "unique": false,
           "comment": "订单id索引",
@@ -3352,6 +3370,11 @@
               "fieldDefKey": "5D324903-2FBC-488F-B973-EE3E9E8394C8",
               "ascOrDesc": "A",
               "id": "768D705A-F43B-481A-AD33-E8C699644A6B"
+            },
+            {
+              "fieldDefKey": "D02DA55D-CF3E-4B0A-A3E9-52E3E5A19874",
+              "ascOrDesc": "A",
+              "id": "5B4FE237-624C-4AE3-B8A0-C57846C6EE21"
             }
           ],
           "id": "5EC61691-DF4F-4485-BD77-C37BF36E3A05"
@@ -3613,23 +3636,6 @@
           "id": "8BB3295C-B5B9-4FEB-91C4-5DCFF0BDA08C"
         },
         {
-          "defKey": "deleted_flag",
-          "defName": "删除标识（0：否，1：是）",
-          "comment": "",
-          "type": "",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "0",
-          "hideInGraph": true,
-          "refDict": "",
-          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
-          "id": "832F1FB9-54B8-4AE7-B619-4B91D6249408",
-          "uiHint": ""
-        },
-        {
           "defKey": "tenant_id",
           "defName": "租户id",
           "comment": "",
@@ -3645,12 +3651,29 @@
           "refDict": "",
           "uiHint": "",
           "id": "29EA3D82-9E6A-467A-94E6-6C810B30B57E"
+        },
+        {
+          "defKey": "deleted_flag",
+          "defName": "删除标识（0：否，1：是）",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "0",
+          "hideInGraph": true,
+          "refDict": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "832F1FB9-54B8-4AE7-B619-4B91D6249408",
+          "uiHint": ""
         }
       ],
       "correlations": [],
       "indexes": [
         {
-          "defKey": "idx_merchant_id_tenant_id",
+          "defKey": "idx_merchant_id",
           "defName": null,
           "unique": false,
           "comment": "商户id索引",
@@ -3664,12 +3687,17 @@
               "fieldDefKey": "29EA3D82-9E6A-467A-94E6-6C810B30B57E",
               "ascOrDesc": "A",
               "id": "BF247627-68D2-4A68-AC31-DB3884867727"
+            },
+            {
+              "fieldDefKey": "832F1FB9-54B8-4AE7-B619-4B91D6249408",
+              "ascOrDesc": "A",
+              "id": "FD32312E-5D7B-4BC2-AD95-D15AD08DF8A8"
             }
           ],
           "id": "D43BD6C7-C217-4FF6-BD92-EF934378A227"
         },
         {
-          "defKey": "idx_storehouse_no_tenant_id",
+          "defKey": "idx_storehouse_no",
           "defName": null,
           "unique": true,
           "comment": "库房编号索引",
@@ -3683,6 +3711,11 @@
               "fieldDefKey": "29EA3D82-9E6A-467A-94E6-6C810B30B57E",
               "ascOrDesc": "A",
               "id": "FE13A918-057D-4C32-8520-727342C84679"
+            },
+            {
+              "fieldDefKey": "832F1FB9-54B8-4AE7-B619-4B91D6249408",
+              "ascOrDesc": "A",
+              "id": "C2DF6CB4-3626-4E37-BF29-9B60CCFC0439"
             }
           ],
           "id": "C10C7BCA-DB07-4B6E-8F0D-DA28B56AAC8B"
@@ -3944,23 +3977,6 @@
           "id": "BB343E96-12A4-407C-B577-52DD050DBAD4"
         },
         {
-          "defKey": "deleted_flag",
-          "defName": "删除标识（0：否，1：是）",
-          "comment": "",
-          "type": "INT",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "0",
-          "hideInGraph": true,
-          "refDict": "",
-          "domain": "",
-          "id": "9652F949-D2ED-4396-968A-254FAF3D8074",
-          "uiHint": ""
-        },
-        {
           "defKey": "tenant_id",
           "defName": "租户id",
           "comment": "",
@@ -3976,21 +3992,29 @@
           "refDict": "",
           "uiHint": "",
           "id": "E62104C6-E9F4-4647-8A91-1E6E9C7B7E57"
-        }
-      ],
-      "correlations": [
+        },
         {
-          "myField": "977CEA57-8277-4681-9530-49ECBFF1A983",
-          "refEntity": "59E96447-6334-4CCD-AFCA-7523C18C36B4",
-          "refField": "7C74A577-CA1E-4FDF-A480-40008381ED48",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
+          "defKey": "deleted_flag",
+          "defName": "删除标识（0：否，1：是）",
+          "comment": "",
+          "type": "INT",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "0",
+          "hideInGraph": true,
+          "refDict": "",
+          "domain": "",
+          "id": "9652F949-D2ED-4396-968A-254FAF3D8074",
+          "uiHint": ""
         }
       ],
+      "correlations": [],
       "indexes": [
         {
-          "defKey": "idx_storehouse_id_tenant_id",
+          "defKey": "idx_storehouse_id",
           "defName": null,
           "unique": false,
           "comment": "仓库id索引",
@@ -4004,12 +4028,17 @@
               "fieldDefKey": "E62104C6-E9F4-4647-8A91-1E6E9C7B7E57",
               "ascOrDesc": "A",
               "id": "BE740669-2925-46C6-B4BD-D1E38F334C1B"
+            },
+            {
+              "fieldDefKey": "9652F949-D2ED-4396-968A-254FAF3D8074",
+              "ascOrDesc": "A",
+              "id": "F2481D0B-D571-4A44-8E66-25E3F84CCDCC"
             }
           ],
           "id": "09AEA1FB-5E39-4CFB-896B-513EBDFFC93E"
         },
         {
-          "defKey": "idx_product_id_tenant_id",
+          "defKey": "idx_product_id",
           "defName": null,
           "unique": false,
           "comment": "商品id索引",
@@ -4023,6 +4052,11 @@
               "fieldDefKey": "E62104C6-E9F4-4647-8A91-1E6E9C7B7E57",
               "ascOrDesc": "A",
               "id": "00D44C6A-2D3C-42B0-A8A8-84C065BA4B24"
+            },
+            {
+              "fieldDefKey": "9652F949-D2ED-4396-968A-254FAF3D8074",
+              "ascOrDesc": "A",
+              "id": "244F4E92-0F37-401E-A56E-AD8F280A9D64"
             }
           ],
           "id": "B4E5B6BB-BA76-4B10-BF47-B83053867A3F"
@@ -4321,7 +4355,7 @@
       "correlations": [],
       "indexes": [
         {
-          "defKey": "idx_merchant_id_tenant_id",
+          "defKey": "idx_merchant_id",
           "defName": null,
           "unique": false,
           "comment": "商户id索引",
@@ -4335,12 +4369,17 @@
               "fieldDefKey": "79DF0C20-375F-4C0D-92EE-374665329C8F",
               "ascOrDesc": "A",
               "id": "0E17BCF3-EC21-4987-A43F-4B01EB324AEB"
+            },
+            {
+              "fieldDefKey": "1EA7D509-2F83-4FD6-AAF0-BD80B17126E5",
+              "ascOrDesc": "A",
+              "id": "F47F8601-EF74-4D80-84AE-F512EB766A80"
             }
           ],
           "id": "6E341045-6EAF-45EE-AB8C-19238BFC3544"
         },
         {
-          "defKey": "idx_parent_category_id_tenant_id",
+          "defKey": "idx_parent_category_id",
           "defName": null,
           "unique": false,
           "comment": "父id索引",
@@ -4354,6 +4393,11 @@
               "fieldDefKey": "79DF0C20-375F-4C0D-92EE-374665329C8F",
               "ascOrDesc": "A",
               "id": "DAA247C9-C84C-46A3-9229-C083C120BE0F"
+            },
+            {
+              "fieldDefKey": "1EA7D509-2F83-4FD6-AAF0-BD80B17126E5",
+              "ascOrDesc": "A",
+              "id": "E2C38680-F509-48D6-A2BF-CF9ADB386FAB"
             }
           ],
           "id": "05508D56-1AF1-43C9-94D4-B3BB94F2CC70"
@@ -4679,23 +4723,6 @@
           "id": "82C8A467-7E1D-4D58-880B-5F408F7AC227"
         },
         {
-          "defKey": "deleted_flag",
-          "defName": "删除标识（0：否，1：是）",
-          "comment": "",
-          "type": "",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "0",
-          "hideInGraph": true,
-          "refDict": "",
-          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
-          "id": "F415A791-B94E-4A8F-A6B8-98E88BD2CA0E",
-          "uiHint": ""
-        },
-        {
           "defKey": "tenant_id",
           "defName": "租户id",
           "comment": "",
@@ -4711,12 +4738,29 @@
           "refDict": "",
           "uiHint": "",
           "id": "511464DE-B0F0-4A5F-BCF7-E298B6073D0E"
+        },
+        {
+          "defKey": "deleted_flag",
+          "defName": "删除标识（0：否，1：是）",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "0",
+          "hideInGraph": true,
+          "refDict": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "F415A791-B94E-4A8F-A6B8-98E88BD2CA0E",
+          "uiHint": ""
         }
       ],
       "correlations": [],
       "indexes": [
         {
-          "defKey": "idx_merchant_id_tenant_id",
+          "defKey": "idx_merchant_id",
           "defName": null,
           "unique": false,
           "comment": "商户id索引",
@@ -4730,12 +4774,17 @@
               "fieldDefKey": "511464DE-B0F0-4A5F-BCF7-E298B6073D0E",
               "ascOrDesc": "A",
               "id": "BC46A828-A31B-4379-A6BB-881BA5569219"
+            },
+            {
+              "fieldDefKey": "F415A791-B94E-4A8F-A6B8-98E88BD2CA0E",
+              "ascOrDesc": "A",
+              "id": "D9397FD2-D5B0-419E-BE86-736E3B2DC4D3"
             }
           ],
           "id": "F0999174-6FBE-4D29-A932-9E6F0894612D"
         },
         {
-          "defKey": "idx_category_id_tenant_id",
+          "defKey": "idx_category_id",
           "defName": null,
           "unique": false,
           "comment": "分类id索引",
@@ -4749,6 +4798,11 @@
               "fieldDefKey": "511464DE-B0F0-4A5F-BCF7-E298B6073D0E",
               "ascOrDesc": "A",
               "id": "C9E8B220-EB9E-4397-BD0E-806044496F9E"
+            },
+            {
+              "fieldDefKey": "F415A791-B94E-4A8F-A6B8-98E88BD2CA0E",
+              "ascOrDesc": "A",
+              "id": "94B0AE74-C4A8-47DD-9DDC-FE22DAE04794"
             }
           ],
           "id": "FA4A89A7-E2A0-4EE5-BCC7-8B5DD38E5AD4"
@@ -4924,22 +4978,6 @@
           "id": "8714880A-8F16-40D0-A9CA-2DE1B42DCCD5"
         },
         {
-          "defKey": "bar_code",
-          "defName": "条码",
-          "comment": "",
-          "type": "VARCHAR",
-          "len": 32,
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "domain": "",
-          "id": "7A17C184-19FA-45F2-B127-1E179D209031"
-        },
-        {
           "defKey": "default_flag",
           "defName": "默认标识（0：否，1：是）",
           "comment": "",
@@ -5058,23 +5096,6 @@
           "id": "3F203BAF-B7C3-4298-83E1-4627CC45C664"
         },
         {
-          "defKey": "deleted_flag",
-          "defName": "删除标识（0：否，1：是）",
-          "comment": "",
-          "type": "",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "0",
-          "hideInGraph": true,
-          "refDict": "",
-          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
-          "id": "9205FA03-4185-4C20-AA45-1E451821EC12",
-          "uiHint": ""
-        },
-        {
           "defKey": "tenant_id",
           "defName": "租户id",
           "comment": "",
@@ -5090,21 +5111,29 @@
           "refDict": "",
           "uiHint": "",
           "id": "61BE722A-4A5B-4559-B79F-ED68A681CBD1"
-        }
-      ],
-      "correlations": [
+        },
         {
-          "myField": "A6EEEA76-2A8C-4796-A3BF-CBA0C7503040",
-          "refEntity": "87645574-DA72-4964-BDEE-4493BD397BE8",
-          "refField": "D817790B-5F91-422F-8A4C-23C276CCB23B",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
+          "defKey": "deleted_flag",
+          "defName": "删除标识（0：否，1：是）",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "0",
+          "hideInGraph": true,
+          "refDict": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "9205FA03-4185-4C20-AA45-1E451821EC12",
+          "uiHint": ""
         }
       ],
+      "correlations": [],
       "indexes": [
         {
-          "defKey": "idx_sub_unit_id_tenant_id",
+          "defKey": "idx_sub_unit_id",
           "defName": null,
           "unique": false,
           "comment": "子单位id索引",
@@ -5118,12 +5147,17 @@
               "fieldDefKey": "61BE722A-4A5B-4559-B79F-ED68A681CBD1",
               "ascOrDesc": "A",
               "id": "CF916A62-7CDE-43C3-8ACD-4BC52670CB42"
+            },
+            {
+              "fieldDefKey": "9205FA03-4185-4C20-AA45-1E451821EC12",
+              "ascOrDesc": "A",
+              "id": "A475B0E8-56CE-43E5-8DC5-7C32101876CE"
             }
           ],
           "id": "D43AEB59-D350-455D-8E66-B0688DB22392"
         },
         {
-          "defKey": "idx_prodcut_id_tenant_id",
+          "defKey": "idx_prodcut_id",
           "defName": null,
           "unique": false,
           "comment": "商品id索引",
@@ -5137,6 +5171,11 @@
               "fieldDefKey": "61BE722A-4A5B-4559-B79F-ED68A681CBD1",
               "ascOrDesc": "A",
               "id": "C48DCBC8-0D4D-4CFC-AF14-84800E5E49DD"
+            },
+            {
+              "fieldDefKey": "9205FA03-4185-4C20-AA45-1E451821EC12",
+              "ascOrDesc": "A",
+              "id": "9A6538F8-F928-4812-A15B-8DB481704652"
             }
           ],
           "id": "27F41230-0715-4033-8935-BF6083FF1882"
@@ -5382,23 +5421,6 @@
           "id": "5945C661-184B-4A19-826E-B05A1767B4E1"
         },
         {
-          "defKey": "deleted_flag",
-          "defName": "删除标识（0：否，1：是）",
-          "comment": "",
-          "type": "",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "0",
-          "hideInGraph": true,
-          "refDict": "",
-          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
-          "id": "2814CF4D-F4EC-4F48-B3BD-BA26434F3286",
-          "uiHint": ""
-        },
-        {
           "defKey": "tenant_id",
           "defName": "租户id",
           "comment": "",
@@ -5414,29 +5436,29 @@
           "refDict": "",
           "uiHint": "",
           "id": "22A8ADF9-09D2-4954-BD3A-681ACE85E84E"
-        }
-      ],
-      "correlations": [
-        {
-          "myField": "04DFE4A0-CB72-49E1-B563-4958B0EB91C8",
-          "refEntity": "FA55B349-8254-40CE-8960-B5AABC9BC40B",
-          "refField": "92D0A8A1-9475-4A81-AF86-781BCA164981",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
         },
         {
-          "myField": "F58C3D01-F7BE-441E-9466-CC4AC4D2E149",
-          "refEntity": "87645574-DA72-4964-BDEE-4493BD397BE8",
-          "refField": "D817790B-5F91-422F-8A4C-23C276CCB23B",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
+          "defKey": "deleted_flag",
+          "defName": "删除标识（0：否，1：是）",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "0",
+          "hideInGraph": true,
+          "refDict": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "2814CF4D-F4EC-4F48-B3BD-BA26434F3286",
+          "uiHint": ""
         }
       ],
+      "correlations": [],
       "indexes": [
         {
-          "defKey": "idx_product_id_tenant_id",
+          "defKey": "idx_product_id",
           "defName": null,
           "unique": false,
           "comment": "产品id索引",
@@ -5450,12 +5472,17 @@
               "fieldDefKey": "22A8ADF9-09D2-4954-BD3A-681ACE85E84E",
               "ascOrDesc": "A",
               "id": "45067132-8F5A-42F6-BC75-078DCFCE26D4"
+            },
+            {
+              "fieldDefKey": "2814CF4D-F4EC-4F48-B3BD-BA26434F3286",
+              "ascOrDesc": "A",
+              "id": "41EADFEE-BA0A-4807-8B42-6CA0AD6360FF"
             }
           ],
           "id": "412D528F-E730-47A5-807E-8BA1EBDE3AEE"
         },
         {
-          "defKey": "idx_category_id_tenant_id",
+          "defKey": "idx_category_id",
           "defName": null,
           "unique": false,
           "comment": "分类id索引",
@@ -5469,6 +5496,11 @@
               "fieldDefKey": "22A8ADF9-09D2-4954-BD3A-681ACE85E84E",
               "ascOrDesc": "A",
               "id": "5D673D83-74AA-4E5F-803E-55242C217653"
+            },
+            {
+              "fieldDefKey": "2814CF4D-F4EC-4F48-B3BD-BA26434F3286",
+              "ascOrDesc": "A",
+              "id": "2205BA3A-C65C-49D5-AEA0-8F45FF285208"
             }
           ],
           "id": "72B25E16-A5C9-466F-88E5-21B708ECE237"
@@ -5478,7 +5510,7 @@
     {
       "id": "008CAE84-21A3-4D15-887B-95B26844DC59",
       "defKey": "product_unit_price",
-      "defName": "产品单位价格表",
+      "defName": "商品单位价格表",
       "comment": "",
       "properties": {
         "deleted_flag": "0",
@@ -5730,6 +5762,23 @@
           "id": "FF7AFBF6-75B7-413F-BEB8-3AC8AE10633F"
         },
         {
+          "defKey": "tenant_id",
+          "defName": "租户id",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "0",
+          "hideInGraph": true,
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "refDict": "",
+          "uiHint": "",
+          "id": "34839939-08E3-42DA-AA94-DBFD86D1136F"
+        },
+        {
           "defKey": "deleted_flag",
           "defName": "删除标识（0：否，1：是）",
           "comment": "",
@@ -5745,6 +5794,329 @@
           "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
           "id": "DC841FF6-DE9D-4163-94AF-94AAF1A1163E",
           "uiHint": ""
+        }
+      ],
+      "correlations": [],
+      "indexes": [
+        {
+          "defKey": "idx_product_unit_id",
+          "defName": null,
+          "unique": false,
+          "comment": "商品单位id索引",
+          "fields": [
+            {
+              "fieldDefKey": "0642A926-DC8B-4972-B841-C7CC4C388C88",
+              "ascOrDesc": "A",
+              "id": "E7ED73BC-38E6-4600-8B64-E0E3788E8037"
+            },
+            {
+              "fieldDefKey": "34839939-08E3-42DA-AA94-DBFD86D1136F",
+              "ascOrDesc": "A",
+              "id": "E43491BE-371A-40BF-9FE8-56DE32B6F6C7"
+            },
+            {
+              "fieldDefKey": "DC841FF6-DE9D-4163-94AF-94AAF1A1163E",
+              "ascOrDesc": "A",
+              "id": "C8C948BF-51F1-4D60-986B-80DADA6710A7"
+            }
+          ],
+          "id": "9AA00FC4-F43A-442C-81F8-C494FCB1CC5D"
+        },
+        {
+          "defKey": "idx_price_id",
+          "defName": null,
+          "unique": false,
+          "comment": "价格id索引",
+          "fields": [
+            {
+              "fieldDefKey": "B87C3111-2A81-44C8-9271-0839282ACAD3",
+              "ascOrDesc": "A",
+              "id": "7A9A93A8-6673-4651-9228-C8982C22565C"
+            },
+            {
+              "fieldDefKey": "34839939-08E3-42DA-AA94-DBFD86D1136F",
+              "ascOrDesc": "A",
+              "id": "A723133F-A452-4507-9332-F9DE2CF4274F"
+            },
+            {
+              "fieldDefKey": "DC841FF6-DE9D-4163-94AF-94AAF1A1163E",
+              "ascOrDesc": "A",
+              "id": "424A99ED-C175-4E7C-B7D4-998B27D2ACF8"
+            }
+          ],
+          "id": "D07F6548-BD74-4C0E-A1AE-C86334D3647A"
+        }
+      ]
+    },
+    {
+      "id": "AB2F18CE-9EFD-491E-9C85-EA7713247CEB",
+      "defKey": "product_unit_barcode",
+      "defName": "商品单位条码表",
+      "comment": "",
+      "properties": {
+        "deleted_flag": "0",
+        "revision": "0"
+      },
+      "nameTemplate": "{defKey}[{defName}]",
+      "headers": [
+        {
+          "freeze": false,
+          "refKey": "hideInGraph",
+          "hideInGraph": true
+        },
+        {
+          "freeze": true,
+          "refKey": "defKey",
+          "hideInGraph": false
+        },
+        {
+          "freeze": true,
+          "refKey": "defName",
+          "hideInGraph": false
+        },
+        {
+          "freeze": false,
+          "refKey": "primaryKey",
+          "hideInGraph": false
+        },
+        {
+          "freeze": false,
+          "refKey": "notNull",
+          "hideInGraph": true
+        },
+        {
+          "freeze": false,
+          "refKey": "autoIncrement",
+          "hideInGraph": true
+        },
+        {
+          "freeze": false,
+          "refKey": "domain",
+          "hideInGraph": true
+        },
+        {
+          "freeze": false,
+          "refKey": "type",
+          "hideInGraph": false
+        },
+        {
+          "freeze": false,
+          "refKey": "len",
+          "hideInGraph": false
+        },
+        {
+          "freeze": false,
+          "refKey": "scale",
+          "hideInGraph": false
+        },
+        {
+          "freeze": false,
+          "refKey": "comment",
+          "hideInGraph": true
+        },
+        {
+          "freeze": false,
+          "refKey": "refDict",
+          "hideInGraph": true
+        },
+        {
+          "freeze": false,
+          "refKey": "defaultValue",
+          "hideInGraph": true
+        },
+        {
+          "freeze": false,
+          "refKey": "isStandard",
+          "hideInGraph": false
+        },
+        {
+          "freeze": false,
+          "refKey": "uiHint",
+          "hideInGraph": true
+        }
+      ],
+      "fields": [
+        {
+          "defKey": "product_unit_barcode_id",
+          "defName": "商品单位条码id",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": true,
+          "notNull": true,
+          "autoIncrement": true,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "FF88D79A-7217-4CE9-8185-D9D5047D921C"
+        },
+        {
+          "defKey": "merchant_id",
+          "defName": "商户id",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "34D656C7-B492-4487-BF46-D8EBD9689578"
+        },
+        {
+          "defKey": "product_unit_id",
+          "defName": "商品单位id",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "07389153-076D-452D-B587-D6132DAF545B"
+        },
+        {
+          "defKey": "product_id",
+          "defName": "商品id",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "D016712D-405B-4F7F-BCB7-ADD3D848D91D"
+        },
+        {
+          "defKey": "barcode",
+          "defName": "商品条码",
+          "comment": "",
+          "type": "VARCHAR",
+          "len": 32,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "domain": "",
+          "id": "ACD9C46D-20E5-4F7A-9DAF-0AA8C91CB2E9"
+        },
+        {
+          "defKey": "remark",
+          "defName": "备注",
+          "comment": "",
+          "type": "VARCHAR",
+          "len": 512,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": true,
+          "refDict": "",
+          "domain": "",
+          "id": "1B30E763-4FC1-4897-9D13-133D7A49737D",
+          "uiHint": ""
+        },
+        {
+          "defKey": "revision",
+          "defName": "版本（乐观锁）",
+          "comment": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "0",
+          "hideInGraph": true,
+          "refDict": "",
+          "uiHint": "",
+          "id": "0437E26B-E8ED-45D1-93CE-87D82913E768"
+        },
+        {
+          "defKey": "created_by",
+          "defName": "创建人",
+          "comment": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": true,
+          "refDict": "",
+          "uiHint": "",
+          "id": "43ABF8A3-E71F-4321-8118-2B0E5F676EC2"
+        },
+        {
+          "defKey": "created_time",
+          "defName": "创建时间",
+          "comment": "",
+          "domain": "74487A3C-AB82-4011-A047-F88E5147E78B",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": true,
+          "refDict": "",
+          "uiHint": "",
+          "id": "1665D054-B81A-4EF2-9D42-372249406565"
+        },
+        {
+          "defKey": "updated_by",
+          "defName": "更新人",
+          "comment": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": true,
+          "refDict": "",
+          "uiHint": "",
+          "id": "C7BCD416-2B30-4CF2-95DB-E3E8C99D2ECD"
+        },
+        {
+          "defKey": "updated_time",
+          "defName": "更新时间",
+          "comment": "",
+          "domain": "74487A3C-AB82-4011-A047-F88E5147E78B",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": true,
+          "refDict": "",
+          "uiHint": "",
+          "id": "781989EF-DB0C-4D06-90F8-2DDD3301F4BC"
         },
         {
           "defKey": "tenant_id",
@@ -5761,65 +6133,114 @@
           "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
           "refDict": "",
           "uiHint": "",
-          "id": "34839939-08E3-42DA-AA94-DBFD86D1136F"
-        }
-      ],
-      "correlations": [
-        {
-          "myField": "B87C3111-2A81-44C8-9271-0839282ACAD3",
-          "refEntity": "52C151E7-4645-4E10-B8E7-F5D4D76FB5E8",
-          "refField": "AA5AEBDD-6856-4F41-90B9-D3CCCCDCF443",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
+          "id": "429AC35F-3C28-4987-B940-D5AF7EBBFBD6"
         },
         {
-          "myField": "0642A926-DC8B-4972-B841-C7CC4C388C88",
-          "refEntity": "887F9556-9737-4154-BD4C-1B421FFA0CFD",
-          "refField": "3518803B-46A7-40C3-AB97-F76086ADCBCD",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
+          "defKey": "deleted_flag",
+          "defName": "删除标识（0：否，1：是）",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "0",
+          "hideInGraph": true,
+          "refDict": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "A5DA2976-CD43-4A3B-98A6-2E92AB031EF6",
+          "uiHint": ""
         }
       ],
+      "correlations": [],
       "indexes": [
         {
-          "defKey": "idx_product_unit_id_tenant_id",
+          "defKey": "idx_merchant_id_product_id",
           "defName": null,
           "unique": false,
-          "comment": "商品单位id索引",
+          "comment": "",
           "fields": [
             {
-              "fieldDefKey": "0642A926-DC8B-4972-B841-C7CC4C388C88",
+              "fieldDefKey": "34D656C7-B492-4487-BF46-D8EBD9689578",
               "ascOrDesc": "A",
-              "id": "E7ED73BC-38E6-4600-8B64-E0E3788E8037"
+              "id": "B3ED7AD0-D811-41AF-A8F5-85158AC98C99"
             },
             {
-              "fieldDefKey": "34839939-08E3-42DA-AA94-DBFD86D1136F",
+              "fieldDefKey": "D016712D-405B-4F7F-BCB7-ADD3D848D91D",
               "ascOrDesc": "A",
-              "id": "E43491BE-371A-40BF-9FE8-56DE32B6F6C7"
+              "id": "27E6B8D4-93D9-4A4C-AAFA-B8F66D0F4C43"
+            },
+            {
+              "fieldDefKey": "429AC35F-3C28-4987-B940-D5AF7EBBFBD6",
+              "ascOrDesc": "A",
+              "id": "C80D0B5E-D7F8-4C88-A8EA-ACFEC2F58686"
+            },
+            {
+              "fieldDefKey": "A5DA2976-CD43-4A3B-98A6-2E92AB031EF6",
+              "ascOrDesc": "A",
+              "id": "7183740F-9EE8-4C50-9FD5-89898F4589A0"
             }
           ],
-          "id": "9AA00FC4-F43A-442C-81F8-C494FCB1CC5D"
+          "id": "48F16689-CDBD-49DF-968F-1C7355643210"
         },
         {
-          "defKey": "idx_price_id_tenant_id",
+          "defKey": "unq_merchant_id_barcode",
           "defName": null,
           "unique": false,
-          "comment": "价格id索引",
+          "comment": "",
           "fields": [
             {
-              "fieldDefKey": "B87C3111-2A81-44C8-9271-0839282ACAD3",
+              "fieldDefKey": "34D656C7-B492-4487-BF46-D8EBD9689578",
               "ascOrDesc": "A",
-              "id": "7A9A93A8-6673-4651-9228-C8982C22565C"
+              "id": "F3F0CA90-53DE-4A27-93EE-1D0D6C5FA00D"
             },
             {
-              "fieldDefKey": "34839939-08E3-42DA-AA94-DBFD86D1136F",
+              "fieldDefKey": "ACD9C46D-20E5-4F7A-9DAF-0AA8C91CB2E9",
               "ascOrDesc": "A",
-              "id": "A723133F-A452-4507-9332-F9DE2CF4274F"
+              "id": "131EC100-483A-4EEC-86AE-102A3B6C30D6"
+            },
+            {
+              "fieldDefKey": "429AC35F-3C28-4987-B940-D5AF7EBBFBD6",
+              "ascOrDesc": "A",
+              "id": "95857C3D-CF30-4C9D-B4D0-C087B1DC8056"
+            },
+            {
+              "fieldDefKey": "A5DA2976-CD43-4A3B-98A6-2E92AB031EF6",
+              "ascOrDesc": "A",
+              "id": "42B7EAF3-660D-4484-8DC4-D20FEA63CC30"
             }
           ],
-          "id": "D07F6548-BD74-4C0E-A1AE-C86334D3647A"
+          "id": "13E40BAE-2AAF-412E-AE20-24202628D529"
+        },
+        {
+          "defKey": "idx_merchant_id_product_unit_id",
+          "defName": null,
+          "unique": false,
+          "comment": "",
+          "fields": [
+            {
+              "fieldDefKey": "34D656C7-B492-4487-BF46-D8EBD9689578",
+              "ascOrDesc": "A",
+              "id": "C5D73B1A-F0BF-4F6E-9C0F-02926BE21BB8"
+            },
+            {
+              "fieldDefKey": "07389153-076D-452D-B587-D6132DAF545B",
+              "ascOrDesc": "A",
+              "id": "C3320F7F-DF58-4BF2-B6DB-BEF481860625"
+            },
+            {
+              "fieldDefKey": "429AC35F-3C28-4987-B940-D5AF7EBBFBD6",
+              "ascOrDesc": "A",
+              "id": "CA18547D-60F5-4B9A-8B0A-1DF77CD96DEF"
+            },
+            {
+              "fieldDefKey": "A5DA2976-CD43-4A3B-98A6-2E92AB031EF6",
+              "ascOrDesc": "A",
+              "id": "7BDD455A-594B-4B6E-9648-230FB3AD3B6F"
+            }
+          ],
+          "id": "205D255B-0BC0-4A5E-9592-23F53CB7A1B5"
         }
       ]
     },
@@ -6078,23 +6499,6 @@
           "id": "C8F44B71-E144-4084-A989-5FF1A4744C6B"
         },
         {
-          "defKey": "deleted_flag",
-          "defName": "删除标识（0：否，1：是）",
-          "comment": "",
-          "type": "",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "0",
-          "hideInGraph": true,
-          "refDict": "",
-          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
-          "id": "A040445A-8E65-49E5-98C9-1B566A3C82F6",
-          "uiHint": ""
-        },
-        {
           "defKey": "tenant_id",
           "defName": "租户id",
           "comment": "",
@@ -6110,12 +6514,29 @@
           "refDict": "",
           "uiHint": "",
           "id": "F6BA2372-1EA9-46D3-A5ED-D9C7EF2E121F"
+        },
+        {
+          "defKey": "deleted_flag",
+          "defName": "删除标识（0：否，1：是）",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "0",
+          "hideInGraph": true,
+          "refDict": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "A040445A-8E65-49E5-98C9-1B566A3C82F6",
+          "uiHint": ""
         }
       ],
       "correlations": [],
       "indexes": [
         {
-          "defKey": "idx_merchant_id_tenant_id",
+          "defKey": "idx_merchant_id",
           "defName": null,
           "unique": false,
           "comment": "商户id索引",
@@ -6129,6 +6550,11 @@
               "fieldDefKey": "F6BA2372-1EA9-46D3-A5ED-D9C7EF2E121F",
               "ascOrDesc": "A",
               "id": "F660215A-5CFC-4302-96F7-16433F376068"
+            },
+            {
+              "fieldDefKey": "A040445A-8E65-49E5-98C9-1B566A3C82F6",
+              "ascOrDesc": "A",
+              "id": "2F0AAC3F-D7F8-4944-A27F-7FFCF1ECA393"
             }
           ],
           "id": "BBFF6155-E404-4ACD-B9BB-41F472A9279B"
@@ -6470,23 +6896,6 @@
           "id": "CADAC6AF-14C3-4412-84C9-70BB1314F0B2"
         },
         {
-          "defKey": "deleted_flag",
-          "defName": "删除标识（0：否，1：是）",
-          "comment": "",
-          "type": "",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "0",
-          "hideInGraph": true,
-          "refDict": "",
-          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
-          "id": "771B157F-9C42-4249-B060-CFA791316DA2",
-          "uiHint": ""
-        },
-        {
           "defKey": "tenant_id",
           "defName": "租户id",
           "comment": "",
@@ -6502,12 +6911,29 @@
           "refDict": "",
           "uiHint": "",
           "id": "5761E949-A1D9-4975-BA03-4D0E203637DB"
+        },
+        {
+          "defKey": "deleted_flag",
+          "defName": "删除标识（0：否，1：是）",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "0",
+          "hideInGraph": true,
+          "refDict": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "771B157F-9C42-4249-B060-CFA791316DA2",
+          "uiHint": ""
         }
       ],
       "correlations": [],
       "indexes": [
         {
-          "defKey": "idx_merchant_id_tenant_id",
+          "defKey": "idx_merchant_id",
           "defName": null,
           "unique": false,
           "comment": "商户id索引",
@@ -6521,6 +6947,11 @@
               "fieldDefKey": "5761E949-A1D9-4975-BA03-4D0E203637DB",
               "ascOrDesc": "A",
               "id": "9A2BFE6A-C577-43D3-B890-3433A3287229"
+            },
+            {
+              "fieldDefKey": "771B157F-9C42-4249-B060-CFA791316DA2",
+              "ascOrDesc": "A",
+              "id": "5122FF12-8F1D-40CE-9C1F-673785920BD9"
             }
           ],
           "id": "5E096E9C-8315-458E-B18F-4469F331294E"
@@ -6798,23 +7229,6 @@
           "id": "46519777-0BA0-4445-880E-5E349E396524"
         },
         {
-          "defKey": "deleted_flag",
-          "defName": "删除标识（0：否，1：是）",
-          "comment": "",
-          "type": "",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "0",
-          "hideInGraph": true,
-          "refDict": "",
-          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
-          "id": "DA61BD1C-2598-4866-9D83-37E487C4CC9C",
-          "uiHint": ""
-        },
-        {
           "defKey": "tenant_id",
           "defName": "租户id",
           "comment": "",
@@ -6830,12 +7244,29 @@
           "refDict": "",
           "uiHint": "",
           "id": "03CF03BD-CF80-46CE-B4F7-F902BA65E1B4"
+        },
+        {
+          "defKey": "deleted_flag",
+          "defName": "删除标识（0：否，1：是）",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "0",
+          "hideInGraph": true,
+          "refDict": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "DA61BD1C-2598-4866-9D83-37E487C4CC9C",
+          "uiHint": ""
         }
       ],
       "correlations": [],
       "indexes": [
         {
-          "defKey": "idx_district_parent_id_tenant_id",
+          "defKey": "idx_district_parent_id",
           "defName": null,
           "unique": false,
           "comment": "父id索引",
@@ -6849,6 +7280,11 @@
               "fieldDefKey": "03CF03BD-CF80-46CE-B4F7-F902BA65E1B4",
               "ascOrDesc": "A",
               "id": "99EA17A5-A618-4C46-BD14-D63B901560ED"
+            },
+            {
+              "fieldDefKey": "DA61BD1C-2598-4866-9D83-37E487C4CC9C",
+              "ascOrDesc": "A",
+              "id": "979DFD03-CF25-4C4E-A735-89C7E658C248"
             }
           ],
           "id": "D3453A77-F8EC-450D-B0E6-118B6013D656"
@@ -7174,23 +7610,6 @@
           "id": "79DFB3F1-93F6-46E9-B301-B24DBB2103CD"
         },
         {
-          "defKey": "deleted_flag",
-          "defName": "删除标识（0：否，1：是）",
-          "comment": "",
-          "type": "",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "0",
-          "hideInGraph": true,
-          "refDict": "",
-          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
-          "id": "75DC2F18-BC7B-45FC-AFF6-4B36870B4AF6",
-          "uiHint": ""
-        },
-        {
           "defKey": "tenant_id",
           "defName": "租户id",
           "comment": "",
@@ -7206,12 +7625,29 @@
           "refDict": "",
           "uiHint": "",
           "id": "FCAF7D77-28FA-4A0A-94B3-A566767BA15D"
+        },
+        {
+          "defKey": "deleted_flag",
+          "defName": "删除标识（0：否，1：是）",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "0",
+          "hideInGraph": true,
+          "refDict": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "75DC2F18-BC7B-45FC-AFF6-4B36870B4AF6",
+          "uiHint": ""
         }
       ],
       "correlations": [],
       "indexes": [
         {
-          "defKey": "idx_biz_id_tenant_id",
+          "defKey": "idx_biz_id",
           "defName": null,
           "unique": false,
           "comment": "业务id索引",
@@ -7225,6 +7661,11 @@
               "fieldDefKey": "FCAF7D77-28FA-4A0A-94B3-A566767BA15D",
               "ascOrDesc": "A",
               "id": "AB7A312D-BB41-4721-AD5C-4D279DFCEA8B"
+            },
+            {
+              "fieldDefKey": "75DC2F18-BC7B-45FC-AFF6-4B36870B4AF6",
+              "ascOrDesc": "A",
+              "id": "45FD1F92-8AD8-42CE-8872-CDC9ED172A3B"
             }
           ],
           "id": "04A3916E-1CF9-49EE-BCD8-C385359D5ACC"
@@ -7550,23 +7991,6 @@
           "id": "8CF08EDC-782E-43BF-85EA-4A296C0E07E7"
         },
         {
-          "defKey": "deleted_flag",
-          "defName": "删除标识（0：否，1：是）",
-          "comment": "",
-          "type": "",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "0",
-          "hideInGraph": true,
-          "refDict": "",
-          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
-          "id": "31612D16-248C-4588-920E-E2208D3AA8D7",
-          "uiHint": ""
-        },
-        {
           "defKey": "tenant_id",
           "defName": "租户id",
           "comment": "",
@@ -7582,21 +8006,29 @@
           "refDict": "",
           "uiHint": "",
           "id": "2DFD3BCD-1F9A-4A8B-802F-1827B0A81048"
-        }
-      ],
-      "correlations": [
+        },
         {
-          "myField": "BA317B72-F5C8-460F-B995-16D266612E6D",
-          "refEntity": "6E92F6DC-1DC0-4D22-9A26-4164DA03E2F2",
-          "refField": "1779BD01-ADD7-4420-B0F2-36772074A7CD",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
+          "defKey": "deleted_flag",
+          "defName": "删除标识（0：否，1：是）",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "0",
+          "hideInGraph": true,
+          "refDict": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "31612D16-248C-4588-920E-E2208D3AA8D7",
+          "uiHint": ""
         }
       ],
+      "correlations": [],
       "indexes": [
         {
-          "defKey": "idx_order_id_tenant_id",
+          "defKey": "idx_order_id",
           "defName": null,
           "unique": false,
           "comment": "订单id索引",
@@ -7610,12 +8042,17 @@
               "fieldDefKey": "2DFD3BCD-1F9A-4A8B-802F-1827B0A81048",
               "ascOrDesc": "A",
               "id": "A3FBDF53-CA5A-4A4A-8F63-330409BCEAAA"
+            },
+            {
+              "fieldDefKey": "31612D16-248C-4588-920E-E2208D3AA8D7",
+              "ascOrDesc": "A",
+              "id": "DEB47BC8-F361-4205-8E6A-DEE31D6AEC38"
             }
           ],
           "id": "4DB12246-EB2A-42D9-AC7C-186C48EF9CC0"
         },
         {
-          "defKey": "idx_user_id_tenant_id",
+          "defKey": "idx_user_id",
           "defName": null,
           "unique": false,
           "comment": "用户id索引",
@@ -7629,6 +8066,11 @@
               "fieldDefKey": "2DFD3BCD-1F9A-4A8B-802F-1827B0A81048",
               "ascOrDesc": "A",
               "id": "017D326B-9368-4989-BA9D-8BE63F5EF6ED"
+            },
+            {
+              "fieldDefKey": "31612D16-248C-4588-920E-E2208D3AA8D7",
+              "ascOrDesc": "A",
+              "id": "A339AC72-12F7-4745-9BD1-EA81245AB670"
             }
           ],
           "id": "03866170-35C3-4FBD-808D-BF7F665543D6"
@@ -7890,23 +8332,6 @@
           "id": "63F93142-B8D4-42F9-B055-8DA8445256E9"
         },
         {
-          "defKey": "deleted_flag",
-          "defName": "删除标识（0：否，1：是）",
-          "comment": "",
-          "type": "",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "0",
-          "hideInGraph": true,
-          "refDict": "",
-          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
-          "id": "EF9AAD3C-E0AC-4236-97E6-24DB4D6444D5",
-          "uiHint": ""
-        },
-        {
           "defKey": "tenant_id",
           "defName": "租户id",
           "comment": "",
@@ -7922,12 +8347,29 @@
           "refDict": "",
           "uiHint": "",
           "id": "7FFF8D4E-7E03-420F-84EC-C3DEC91D8697"
+        },
+        {
+          "defKey": "deleted_flag",
+          "defName": "删除标识（0：否，1：是）",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "0",
+          "hideInGraph": true,
+          "refDict": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "EF9AAD3C-E0AC-4236-97E6-24DB4D6444D5",
+          "uiHint": ""
         }
       ],
       "correlations": [],
       "indexes": [
         {
-          "defKey": "idx_config_no_tenant_id",
+          "defKey": "idx_config_no",
           "defName": null,
           "unique": true,
           "comment": "配置编号索引",
@@ -7941,6 +8383,11 @@
               "fieldDefKey": "7FFF8D4E-7E03-420F-84EC-C3DEC91D8697",
               "ascOrDesc": "A",
               "id": "B987159D-57CE-45F7-9E1E-CABC0B2B6C79"
+            },
+            {
+              "fieldDefKey": "EF9AAD3C-E0AC-4236-97E6-24DB4D6444D5",
+              "ascOrDesc": "A",
+              "id": "505AF000-1F05-4ADB-A2BC-4E45FB6EA46F"
             }
           ],
           "id": "70CBFFA4-645E-42B3-93F0-A8BDD69353AB"
@@ -8202,23 +8649,6 @@
           "id": "829BA9C0-43EA-44BA-AF63-F5DD469B76BF"
         },
         {
-          "defKey": "deleted_flag",
-          "defName": "删除标识（0：否，1：是）",
-          "comment": "",
-          "type": "",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": true,
-          "autoIncrement": false,
-          "defaultValue": "0",
-          "hideInGraph": true,
-          "refDict": "",
-          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
-          "id": "A57233FE-76FE-4799-A8A0-5A896D6ECBA9",
-          "uiHint": ""
-        },
-        {
           "defKey": "tenant_id",
           "defName": "租户id",
           "comment": "",
@@ -8234,12 +8664,29 @@
           "refDict": "",
           "uiHint": "",
           "id": "9CCE447E-2BD2-40C1-898B-8EB19CBC1413"
+        },
+        {
+          "defKey": "deleted_flag",
+          "defName": "删除标识（0：否，1：是）",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "0",
+          "hideInGraph": true,
+          "refDict": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "A57233FE-76FE-4799-A8A0-5A896D6ECBA9",
+          "uiHint": ""
         }
       ],
       "correlations": [],
       "indexes": [
         {
-          "defKey": "idx_code_key_tenant_id",
+          "defKey": "idx_code_key",
           "defName": null,
           "unique": false,
           "comment": "编码key索引",
@@ -8253,6 +8700,11 @@
               "fieldDefKey": "9CCE447E-2BD2-40C1-898B-8EB19CBC1413",
               "ascOrDesc": "A",
               "id": "CB86E4DA-B145-4877-881C-2F0B74E72B04"
+            },
+            {
+              "fieldDefKey": "A57233FE-76FE-4799-A8A0-5A896D6ECBA9",
+              "ascOrDesc": "A",
+              "id": "7C0CAB54-B167-463E-A5A8-01F8DCC32FFB"
             }
           ],
           "id": "512DC8F9-5A62-4650-B14F-227177B16A96"
@@ -8288,7 +8740,8 @@
         "C1A09B13-A36E-43F8-8937-33D05A268DDD",
         "48002AC1-1F3A-4E3E-BE0C-69AC9938A179",
         "205B6728-D054-4F68-9B61-E53C75B500F6",
-        "D3055D42-5A44-42A4-87EF-B15A53BD46BC"
+        "D3055D42-5A44-42A4-87EF-B15A53BD46BC",
+        "AB2F18CE-9EFD-491E-9C85-EA7713247CEB"
       ],
       "refViews": [],
       "refDiagrams": [
