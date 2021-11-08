@@ -2,9 +2,9 @@
   "name": "oldlatte",
   "describe": "ER-oldlatte",
   "avatar": "",
-  "version": "3.5.1",
+  "version": "3.5.5",
   "createdTime": "2021-10-17 14:30:13",
-  "updatedTime": "2021-11-6 18:37:27",
+  "updatedTime": "2021-11-8 23:44:01",
   "profile": {
     "default": {
       "db": "2C17FA15-B29B-498D-A1FB-9C8E7B5A92CD",
@@ -494,7 +494,7 @@
           "id": "E8454AF8-902D-4636-A08F-622D27EE348D"
         },
         {
-          "defKey": "nick_name",
+          "defKey": "nickname",
           "defName": "昵称",
           "comment": "",
           "type": "VARCHAR",
@@ -542,7 +542,7 @@
           "id": "A9B5A08B-6BF9-414A-B07F-51A48DC7B35F"
         },
         {
-          "defKey": "user_password",
+          "defKey": "password",
           "defName": "密码（密文）",
           "comment": "",
           "type": "VARCHAR",
@@ -558,7 +558,7 @@
           "id": "413B37F9-7678-42A6-B1DD-2E5C9B24B2E7"
         },
         {
-          "defKey": "phone_no",
+          "defKey": "mobile",
           "defName": "手机号（唯一）",
           "comment": "",
           "type": "VARCHAR",
@@ -793,7 +793,7 @@
       "correlations": [],
       "indexes": [
         {
-          "defKey": "idx_phone_no",
+          "defKey": "idx_mobile",
           "defName": null,
           "unique": true,
           "comment": "手机号索引",
@@ -1797,24 +1797,7 @@
           "uiHint": ""
         }
       ],
-      "correlations": [
-        {
-          "myField": "0D58E17A-53EC-4B47-8F36-37668D55B4C3",
-          "refEntity": "08278BA5-1C7E-489E-9EB6-2D78D6822104",
-          "refField": "21A332B6-BAF9-4F45-82B4-FBD56A0D3F21",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
-        },
-        {
-          "myField": "34DED86B-548B-4F47-9430-4683997072BD",
-          "refEntity": "37D981A2-696B-4D79-8F0A-BD68A4DBEC08",
-          "refField": "0ECCF6BF-E2B4-4791-9EF3-1BE2EB40F958",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
-        }
-      ],
+      "correlations": [],
       "indexes": [
         {
           "defKey": "idx_role_id",
@@ -2139,24 +2122,7 @@
           "uiHint": ""
         }
       ],
-      "correlations": [
-        {
-          "myField": "09DC7C65-B4BE-45CA-AB1E-C90D770FAD87",
-          "refEntity": "E0DF7775-5459-47C3-A8CC-478937041949",
-          "refField": "1AE8401A-1901-4974-A2D6-F81C201100F9",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
-        },
-        {
-          "myField": "F2650010-F2D7-47CE-B904-0B317516FABD",
-          "refEntity": "08278BA5-1C7E-489E-9EB6-2D78D6822104",
-          "refField": "21A332B6-BAF9-4F45-82B4-FBD56A0D3F21",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
-        }
-      ],
+      "correlations": [],
       "indexes": [
         {
           "defKey": "idx_role_id",
@@ -2942,16 +2908,7 @@
           "uiHint": ""
         }
       ],
-      "correlations": [
-        {
-          "myField": "0EBAC553-7F1B-4338-B435-54D89E3E3D4E",
-          "refEntity": "A02640EE-584C-4FB4-9D04-741AA4E4D79F",
-          "refField": "AA30BD7B-F3C8-4B4F-A7EE-847EAD2A474D",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
-        }
-      ],
+      "correlations": [],
       "indexes": [
         {
           "defKey": "idx_merchant_id",
@@ -3396,16 +3353,7 @@
           "uiHint": ""
         }
       ],
-      "correlations": [
-        {
-          "myField": "A8F1D20D-5C93-4B9D-BC2A-E1E6B9B23F5D",
-          "refEntity": "6E92F6DC-1DC0-4D22-9A26-4164DA03E2F2",
-          "refField": "1779BD01-ADD7-4420-B0F2-36772074A7CD",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
-        }
-      ],
+      "correlations": [],
       "indexes": [
         {
           "defKey": "idx_order_id",
@@ -4063,16 +4011,7 @@
           "uiHint": ""
         }
       ],
-      "correlations": [
-        {
-          "myField": "977CEA57-8277-4681-9530-49ECBFF1A983",
-          "refEntity": "59E96447-6334-4CCD-AFCA-7523C18C36B4",
-          "refField": "7C74A577-CA1E-4FDF-A480-40008381ED48",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
-        }
-      ],
+      "correlations": [],
       "indexes": [
         {
           "defKey": "idx_storehouse_id",
@@ -5191,16 +5130,7 @@
           "uiHint": ""
         }
       ],
-      "correlations": [
-        {
-          "myField": "A6EEEA76-2A8C-4796-A3BF-CBA0C7503040",
-          "refEntity": "87645574-DA72-4964-BDEE-4493BD397BE8",
-          "refField": "D817790B-5F91-422F-8A4C-23C276CCB23B",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
-        }
-      ],
+      "correlations": [],
       "indexes": [
         {
           "defKey": "idx_sub_unit_id",
@@ -5525,24 +5455,7 @@
           "uiHint": ""
         }
       ],
-      "correlations": [
-        {
-          "myField": "04DFE4A0-CB72-49E1-B563-4958B0EB91C8",
-          "refEntity": "FA55B349-8254-40CE-8960-B5AABC9BC40B",
-          "refField": "92D0A8A1-9475-4A81-AF86-781BCA164981",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
-        },
-        {
-          "myField": "F58C3D01-F7BE-441E-9466-CC4AC4D2E149",
-          "refEntity": "87645574-DA72-4964-BDEE-4493BD397BE8",
-          "refField": "D817790B-5F91-422F-8A4C-23C276CCB23B",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
-        }
-      ],
+      "correlations": [],
       "indexes": [
         {
           "defKey": "idx_product_id",
@@ -5883,24 +5796,7 @@
           "uiHint": ""
         }
       ],
-      "correlations": [
-        {
-          "myField": "B87C3111-2A81-44C8-9271-0839282ACAD3",
-          "refEntity": "52C151E7-4645-4E10-B8E7-F5D4D76FB5E8",
-          "refField": "AA5AEBDD-6856-4F41-90B9-D3CCCCDCF443",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
-        },
-        {
-          "myField": "0642A926-DC8B-4972-B841-C7CC4C388C88",
-          "refEntity": "887F9556-9737-4154-BD4C-1B421FFA0CFD",
-          "refField": "3518803B-46A7-40C3-AB97-F76086ADCBCD",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
-        }
-      ],
+      "correlations": [],
       "indexes": [
         {
           "defKey": "idx_product_unit_id",
@@ -6257,24 +6153,7 @@
           "uiHint": ""
         }
       ],
-      "correlations": [
-        {
-          "myField": "D016712D-405B-4F7F-BCB7-ADD3D848D91D",
-          "refEntity": "87645574-DA72-4964-BDEE-4493BD397BE8",
-          "refField": "D817790B-5F91-422F-8A4C-23C276CCB23B",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
-        },
-        {
-          "myField": "07389153-076D-452D-B587-D6132DAF545B",
-          "refEntity": "887F9556-9737-4154-BD4C-1B421FFA0CFD",
-          "refField": "3518803B-46A7-40C3-AB97-F76086ADCBCD",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
-        }
-      ],
+      "correlations": [],
       "indexes": [
         {
           "defKey": "idx_merchant_id_product_id",
@@ -8146,16 +8025,7 @@
           "uiHint": ""
         }
       ],
-      "correlations": [
-        {
-          "myField": "BA317B72-F5C8-460F-B995-16D266612E6D",
-          "refEntity": "6E92F6DC-1DC0-4D22-9A26-4164DA03E2F2",
-          "refField": "1779BD01-ADD7-4420-B0F2-36772074A7CD",
-          "myRows": "n",
-          "refRows": "1",
-          "innerType": ""
-        }
-      ],
+      "correlations": [],
       "indexes": [
         {
           "defKey": "idx_order_id",
