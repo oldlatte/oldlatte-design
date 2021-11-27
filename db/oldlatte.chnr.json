@@ -4,7 +4,7 @@
   "avatar": "",
   "version": "3.5.1",
   "createdTime": "2021-10-17 14:30:13",
-  "updatedTime": "2021-11-21 21:43:47",
+  "updatedTime": "2021-11-27 15:07:54",
   "profile": {
     "default": {
       "db": "2C17FA15-B29B-498D-A1FB-9C8E7B5A92CD",
@@ -1334,6 +1334,22 @@
           "refDict": "",
           "domain": "",
           "id": "1EACADEB-A093-453F-92A4-766337EE6E82"
+        },
+        {
+          "defKey": "path",
+          "defName": "路径",
+          "comment": "",
+          "type": "VARCHAR",
+          "len": 64,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "domain": "",
+          "id": "7AF0C59D-6C85-4F59-98F2-8F7AC49C749A"
         },
         {
           "defKey": "revision",
