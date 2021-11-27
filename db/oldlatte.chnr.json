@@ -4,7 +4,7 @@
   "avatar": "",
   "version": "3.5.1",
   "createdTime": "2021-10-17 14:30:13",
-  "updatedTime": "2021-11-27 15:07:54",
+  "updatedTime": "2021-11-27 18:22:00",
   "profile": {
     "default": {
       "db": "2C17FA15-B29B-498D-A1FB-9C8E7B5A92CD",
@@ -4962,8 +4962,8 @@
           "id": "CB1767F5-A112-4C4C-8B86-205FADC2AEA2"
         },
         {
-          "defKey": "sub_unit_id",
-          "defName": "子单位id",
+          "defKey": "parent_unit_id",
+          "defName": "父单位id",
           "comment": "",
           "type": "",
           "len": "",
@@ -4978,8 +4978,8 @@
           "id": "4DA019BC-C42B-4241-80AE-2B242F1BFDCE"
         },
         {
-          "defKey": "sub_unit_count",
-          "defName": "子单位数量",
+          "defKey": "parent_unit_count",
+          "defName": "父单位数量",
           "comment": "",
           "type": "",
           "len": "",
@@ -5149,7 +5149,7 @@
       "correlations": [],
       "indexes": [
         {
-          "defKey": "idx_sub_unit_id",
+          "defKey": "idx_parent_unit_id",
           "defName": null,
           "unique": false,
           "comment": "子单位id索引",
@@ -5173,7 +5173,7 @@
           "id": "D43AEB59-D350-455D-8E66-B0688DB22392"
         },
         {
-          "defKey": "idx_prodcut_id",
+          "defKey": "idx_product_id",
           "defName": null,
           "unique": false,
           "comment": "商品id索引",
