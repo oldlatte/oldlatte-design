@@ -4,7 +4,7 @@
   "avatar": "",
   "version": "3.5.1",
   "createdTime": "2021-10-17 14:30:13",
-  "updatedTime": "2021-11-27 18:22:00",
+  "updatedTime": "2021-11-27 21:14:06",
   "profile": {
     "default": {
       "db": "2C17FA15-B29B-498D-A1FB-9C8E7B5A92CD",
@@ -2327,7 +2327,7 @@
           "id": "4C3E8BC0-5160-426C-9F43-CEC407A7D7FD"
         },
         {
-          "defKey": "avartar_file_group_id",
+          "defKey": "avatar_file_group_id",
           "defName": "商户头像图片id",
           "comment": "",
           "type": "BIGINT",
