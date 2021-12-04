@@ -4,7 +4,7 @@
   "avatar": "",
   "version": "3.5.1",
   "createdTime": "2021-10-17 14:30:13",
-  "updatedTime": "2021-11-27 21:14:06",
+  "updatedTime": "2021-12-4 18:17:43",
   "profile": {
     "default": {
       "db": "2C17FA15-B29B-498D-A1FB-9C8E7B5A92CD",
@@ -7079,7 +7079,7 @@
           "id": "BAB926C0-9A9E-4A8B-B373-237BC4E8CC8A"
         },
         {
-          "defKey": "district_name",
+          "defKey": "name",
           "defName": "名称",
           "comment": "",
           "type": "VARCHAR",
@@ -7095,7 +7095,7 @@
           "id": "2F170FDC-21FE-440B-9E40-79BF9F4C8313"
         },
         {
-          "defKey": "district_parent_id",
+          "defKey": "parent_id",
           "defName": "父id",
           "comment": "",
           "type": "",
@@ -7111,36 +7111,20 @@
           "id": "C720DA05-BD14-4A66-B0ED-580D548A890B"
         },
         {
-          "defKey": "district_code",
-          "defName": "行政代码",
-          "comment": "",
-          "type": "VARCHAR",
-          "len": 32,
-          "scale": "",
-          "primaryKey": false,
-          "notNull": false,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "domain": "",
-          "id": "302F5D9D-7ACF-4162-B37B-24971C6BB7D7"
-        },
-        {
-          "defKey": "district_order",
-          "defName": "排序数",
+          "defKey": "level",
+          "defName": "等级",
           "comment": "",
           "type": "",
           "len": "",
           "scale": "",
           "primaryKey": false,
-          "notNull": false,
+          "notNull": true,
           "autoIncrement": false,
           "defaultValue": "",
           "hideInGraph": false,
           "refDict": "",
           "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
-          "id": "3D8C33DB-3A24-4A0A-A564-BCCD78B52EC6"
+          "id": "33EB61DC-36AC-4FA6-8477-9289CBC1A76D"
         },
         {
           "defKey": "remark",
