@@ -4,7 +4,7 @@
   "avatar": "",
   "version": "3.5.1",
   "createdTime": "2021-10-17 14:30:13",
-  "updatedTime": "2021-12-4 18:17:43",
+  "updatedTime": "2021-12-5 20:25:47",
   "profile": {
     "default": {
       "db": "2C17FA15-B29B-498D-A1FB-9C8E7B5A92CD",
@@ -462,6 +462,22 @@
           "id": "0ECCF6BF-E2B4-4791-9EF3-1BE2EB40F958"
         },
         {
+          "defKey": "user_type",
+          "defName": "类型（1：后台，2：商户，3：API）",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "5EF96AD9-A3B5-48A8-A743-67C97F1727D8"
+        },
+        {
           "defKey": "wechat_program_open_id",
           "defName": "微信小程序open_id",
           "comment": "",
@@ -508,22 +524,6 @@
           "refDict": "",
           "domain": "",
           "id": "6F9089E6-8353-43C9-BFBD-005C4C8085B2"
-        },
-        {
-          "defKey": "user_type",
-          "defName": "类型（1：普通用户，2：后台管理员，3：API用户）",
-          "comment": "",
-          "type": "",
-          "len": "",
-          "scale": "",
-          "primaryKey": false,
-          "notNull": false,
-          "autoIncrement": false,
-          "defaultValue": "",
-          "hideInGraph": false,
-          "refDict": "",
-          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
-          "id": "5EF96AD9-A3B5-48A8-A743-67C97F1727D8"
         },
         {
           "defKey": "avatar_url",
@@ -971,6 +971,22 @@
           "id": "21A332B6-BAF9-4F45-82B4-FBD56A0D3F21"
         },
         {
+          "defKey": "role_type",
+          "defName": "角色类型（1：后台，2：商户）",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "5704656D-D7A0-40BF-ABED-FA144EBC8237"
+        },
+        {
           "defKey": "role_no",
           "defName": "角色编号",
           "comment": "",
@@ -1169,8 +1185,8 @@
     },
     {
       "id": "E0DF7775-5459-47C3-A8CC-478937041949",
-      "defKey": "sys_menu",
-      "defName": "菜单",
+      "defKey": "sys_permission",
+      "defName": "权限表",
       "comment": "",
       "properties": {
         "deleted_flag": "0",
@@ -1256,8 +1272,8 @@
       ],
       "fields": [
         {
-          "defKey": "menu_id",
-          "defName": "菜单id",
+          "defKey": "permission_id",
+          "defName": "权限id",
           "comment": "",
           "type": "",
           "len": "",
@@ -1272,14 +1288,14 @@
           "id": "1AE8401A-1901-4974-A2D6-F81C201100F9"
         },
         {
-          "defKey": "parent_menu_id",
-          "defName": "父菜单id",
+          "defKey": "parent_permission_id",
+          "defName": "父权限id",
           "comment": "",
           "type": "",
           "len": "",
           "scale": "",
           "primaryKey": false,
-          "notNull": false,
+          "notNull": true,
           "autoIncrement": false,
           "defaultValue": "",
           "hideInGraph": false,
@@ -1288,24 +1304,24 @@
           "id": "9FD165C6-23E5-4879-9EB1-4A5B29F57587"
         },
         {
-          "defKey": "menu_type",
-          "defName": "菜单类型（10：商户端）",
+          "defKey": "permission_type",
+          "defName": "权限类型（1：后端，2：商户）",
           "comment": "",
           "type": "",
           "len": "",
           "scale": "",
           "primaryKey": false,
-          "notNull": false,
+          "notNull": true,
           "autoIncrement": false,
           "defaultValue": "",
           "hideInGraph": false,
           "refDict": "",
-          "domain": "76226FC7-D6C4-496D-94D9-4B8B4F56F476",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
           "id": "050C6DD5-FAFB-4194-94C7-765E1D7F1DB2"
         },
         {
-          "defKey": "menu_no",
-          "defName": "菜单编号",
+          "defKey": "permission_no",
+          "defName": "权限编号",
           "comment": "",
           "type": "VARCHAR",
           "len": 32,
@@ -1320,8 +1336,8 @@
           "id": "525A28A3-F291-4113-8CE1-BA67E40BF806"
         },
         {
-          "defKey": "menu_name",
-          "defName": "菜单名称",
+          "defKey": "permission_name",
+          "defName": "权限名称",
           "comment": "",
           "type": "VARCHAR",
           "len": 32,
@@ -1491,7 +1507,7 @@
       "correlations": [],
       "indexes": [
         {
-          "defKey": "idx_parent_menu_id",
+          "defKey": "idx_parent_permission_id",
           "defName": null,
           "unique": false,
           "comment": "父菜单id索引",
@@ -1515,7 +1531,7 @@
           "id": "2D04DAFC-09DC-4D8A-AD25-D649D368A288"
         },
         {
-          "defKey": "idx_menu_no",
+          "defKey": "idx_permission_no",
           "defName": null,
           "unique": false,
           "comment": "菜单编号索引",
@@ -1643,6 +1659,38 @@
           "refDict": "",
           "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
           "id": "AC56B980-CF63-4244-9911-5197BF11BEBF"
+        },
+        {
+          "defKey": "role_user_type",
+          "defName": "角色用户类型（1：后台，2：商户）",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "760209E3-F0D5-4363-B0C5-596398733905"
+        },
+        {
+          "defKey": "biz_id",
+          "defName": "业务id",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "07D15C18-926B-4E03-8513-C963953158B8"
         },
         {
           "defKey": "role_id",
@@ -1862,13 +1910,42 @@
             }
           ],
           "id": "BE0A5044-1EA6-4005-9A51-621339DB9DD0"
+        },
+        {
+          "defKey": "idx_role_user_type_biz_id",
+          "defName": null,
+          "unique": false,
+          "comment": "",
+          "fields": [
+            {
+              "fieldDefKey": "760209E3-F0D5-4363-B0C5-596398733905",
+              "ascOrDesc": "A",
+              "id": "1E344C39-CB9B-4826-9026-31AC70124641"
+            },
+            {
+              "fieldDefKey": "07D15C18-926B-4E03-8513-C963953158B8",
+              "ascOrDesc": "A",
+              "id": "0710D2AF-CFC8-4EFF-AAC3-55340027C214"
+            },
+            {
+              "fieldDefKey": "426CC59F-BAB8-4E81-9E0F-2866BE9AB68B",
+              "ascOrDesc": "A",
+              "id": "F72842AD-5D78-4718-8E71-DCE3B84CDDA7"
+            },
+            {
+              "fieldDefKey": "AD84A5E3-2F54-47E8-876D-39484C747B77",
+              "ascOrDesc": "A",
+              "id": "EC578697-1880-496C-AEB3-E3D139348382"
+            }
+          ],
+          "id": "6865F855-836D-4B64-B3F1-EFFFC2F6422C"
         }
       ]
     },
     {
       "id": "BC323EB0-244E-4765-A4A1-A61D27C601DB",
-      "defKey": "sys_role_menu",
-      "defName": "用户菜单表",
+      "defKey": "sys_role_permission",
+      "defName": "用户权限表",
       "comment": "",
       "properties": {
         "deleted_flag": "0",
@@ -1954,8 +2031,8 @@
       ],
       "fields": [
         {
-          "defKey": "role_menu_id",
-          "defName": "角色菜单id",
+          "defKey": "role_permission_id",
+          "defName": "角色权限id",
           "comment": "",
           "type": "",
           "len": "",
@@ -1986,8 +2063,8 @@
           "id": "F2650010-F2D7-47CE-B904-0B317516FABD"
         },
         {
-          "defKey": "menu_id",
-          "defName": "菜单id",
+          "defKey": "permission_id",
+          "defName": "权限id",
           "comment": "",
           "type": "",
           "len": "",
@@ -2165,7 +2242,7 @@
           "id": "3344A1B1-9F12-4E31-89F9-680B3ABD7C44"
         },
         {
-          "defKey": "idx_menu_id",
+          "defKey": "idx_permission_id",
           "defName": null,
           "unique": false,
           "comment": "菜单id索引",
@@ -7266,7 +7343,7 @@
       "correlations": [],
       "indexes": [
         {
-          "defKey": "idx_district_parent_id",
+          "defKey": "idx_parent_id",
           "defName": null,
           "unique": false,
           "comment": "父id索引",
@@ -7288,6 +7365,35 @@
             }
           ],
           "id": "D3453A77-F8EC-450D-B0E6-118B6013D656"
+        },
+        {
+          "defKey": "idx_level_parent_id",
+          "defName": null,
+          "unique": false,
+          "comment": "",
+          "fields": [
+            {
+              "fieldDefKey": "33EB61DC-36AC-4FA6-8477-9289CBC1A76D",
+              "ascOrDesc": "A",
+              "id": "7738175C-FD6F-478B-811F-A95918B93647"
+            },
+            {
+              "fieldDefKey": "C720DA05-BD14-4A66-B0ED-580D548A890B",
+              "ascOrDesc": "A",
+              "id": "94774A2C-5F52-4607-ABCE-58DD8B457348"
+            },
+            {
+              "fieldDefKey": "03CF03BD-CF80-46CE-B4F7-F902BA65E1B4",
+              "ascOrDesc": "A",
+              "id": "D33EB519-2F5E-422D-AFB1-F26255CECDF7"
+            },
+            {
+              "fieldDefKey": "DA61BD1C-2598-4866-9D83-37E487C4CC9C",
+              "ascOrDesc": "A",
+              "id": "1129989C-D8A9-43C5-91FC-32B77273EBDB"
+            }
+          ],
+          "id": "32347778-FD58-42EA-927E-BD1F42E49F96"
         }
       ]
     },
