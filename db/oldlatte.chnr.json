@@ -4,7 +4,7 @@
   "avatar": "",
   "version": "3.5.1",
   "createdTime": "2021-10-17 14:30:13",
-  "updatedTime": "2021-12-5 20:25:47",
+  "updatedTime": "2021-12-18 20:11:58",
   "profile": {
     "default": {
       "db": "2C17FA15-B29B-498D-A1FB-9C8E7B5A92CD",
@@ -6434,7 +6434,7 @@
           "scale": "",
           "primaryKey": true,
           "notNull": true,
-          "autoIncrement": false,
+          "autoIncrement": true,
           "defaultValue": "",
           "hideInGraph": false,
           "refDict": "",
