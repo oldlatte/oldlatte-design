@@ -1,2 +1,2 @@
 # oldlatte-design
-Design for Old-latte Projects
+The design of Oldlatte projects
