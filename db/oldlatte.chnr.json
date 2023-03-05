@@ -4,7 +4,7 @@
   "avatar": "",
   "version": "3.5.1",
   "createdTime": "2021-10-17 14:30:13",
-  "updatedTime": "2021-12-19 16:12:00",
+  "updatedTime": "2023-3-5 15:15:52",
   "profile": {
     "default": {
       "db": "2C17FA15-B29B-498D-A1FB-9C8E7B5A92CD",
@@ -6278,7 +6278,7 @@
           "id": "48F16689-CDBD-49DF-968F-1C7355643210"
         },
         {
-          "defKey": "unq_merchant_id_barcode",
+          "defKey": "idx_merchant_id_barcode",
           "defName": null,
           "unique": false,
           "comment": "",
@@ -6307,9 +6307,9 @@
           "id": "13E40BAE-2AAF-412E-AE20-24202628D529"
         },
         {
-          "defKey": "idx_merchant_id_product_unit_id",
+          "defKey": "unq_merchant_id_product_unit_id",
           "defName": null,
-          "unique": false,
+          "unique": true,
           "comment": "",
           "fields": [
             {
