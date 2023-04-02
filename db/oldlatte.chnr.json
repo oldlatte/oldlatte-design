@@ -2,9 +2,9 @@
   "name": "oldlatte",
   "describe": "ER-oldlatte",
   "avatar": "",
-  "version": "4.4.0",
+  "version": "4.5.1",
   "createdTime": "2021-10-17 14:30:13",
-  "updatedTime": "2023-4-2 15:28:26",
+  "updatedTime": "2023-4-2 15:47:16",
   "profile": {
     "default": {
       "db": "2C17FA15-B29B-498D-A1FB-9C8E7B5A92CD",
@@ -2690,7 +2690,7 @@
           "len": "",
           "scale": "",
           "primaryKey": false,
-          "notNull": true,
+          "notNull": false,
           "autoIncrement": false,
           "defaultValue": "",
           "hideInGraph": false,
@@ -2861,7 +2861,8 @@
           ],
           "id": "5748D9C9-78E5-4D34-B027-A93DABE74D81"
         }
-      ]
+      ],
+      "notes": {}
     },
     {
       "id": "6E92F6DC-1DC0-4D22-9A26-4164DA03E2F2",
