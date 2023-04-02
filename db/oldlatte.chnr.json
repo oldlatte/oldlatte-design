@@ -4,7 +4,7 @@
   "avatar": "",
   "version": "4.5.1",
   "createdTime": "2021-10-17 14:30:13",
-  "updatedTime": "2023-4-2 17:46:02",
+  "updatedTime": "2023-4-2 20:49:32",
   "profile": {
     "default": {
       "db": "2C17FA15-B29B-498D-A1FB-9C8E7B5A92CD",
@@ -1496,7 +1496,7 @@
           "len": "",
           "scale": "",
           "primaryKey": false,
-          "notNull": true,
+          "notNull": false,
           "autoIncrement": false,
           "defaultValue": "",
           "hideInGraph": false,
@@ -1755,7 +1755,8 @@
           ],
           "id": "F8AD5CEE-D380-4C43-954D-68C1635B7A55"
         }
-      ]
+      ],
+      "notes": {}
     },
     {
       "id": "4213C259-5AFC-4CC5-87ED-F65CAC7810B4",
@@ -3023,6 +3024,23 @@
           "id": "0EBAC553-7F1B-4338-B435-54D89E3E3D4E"
         },
         {
+          "defKey": "supplier_id",
+          "defName": "供应商id",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "5FEE0FB4-B87E-48B5-B53A-9A7354E38214"
+        },
+        {
           "defKey": "order_no",
           "defName": "订单编号",
           "comment": "",
@@ -3037,6 +3055,23 @@
           "refDict": "",
           "domain": "",
           "id": "C21695E7-BB57-4B01-96E1-D4CC370EC36B"
+        },
+        {
+          "defKey": "relation_order_no",
+          "defName": "关联订单编号",
+          "comment": "",
+          "type": "VARCHAR",
+          "len": 32,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "",
+          "id": "14D3AB47-12E2-403A-BA34-44FA76405F59"
         },
         {
           "defKey": "order_type",
@@ -3345,7 +3380,8 @@
           ],
           "id": "01DAABF9-8E2D-4BB5-B97F-14ED367CFEC7"
         }
-      ]
+      ],
+      "notes": {}
     },
     {
       "id": "E1EA1BDA-5B1F-4029-BA30-2BE53365AB56",
@@ -3535,6 +3571,23 @@
           "refDict": "",
           "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
           "id": "A2FF2774-AF33-45B5-9455-CA68392CCECA"
+        },
+        {
+          "defKey": "product_shipped_count",
+          "defName": "商品已发货数量",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "1B3EC5E0-A006-4544-AA5F-FCE175B4CD0A"
         },
         {
           "defKey": "product_price",
@@ -3747,7 +3800,8 @@
           ],
           "id": "5EC61691-DF4F-4485-BD77-C37BF36E3A05"
         }
-      ]
+      ],
+      "notes": {}
     },
     {
       "id": "59E96447-6334-4CCD-AFCA-7523C18C36B4",
@@ -7121,6 +7175,23 @@
           "id": "AA361C39-B415-4C80-9534-6B25856468C5"
         },
         {
+          "defKey": "customer_user_id",
+          "defName": "用户ID（客户帐号关联）",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "B103DDC2-92AA-48B4-B7DA-7615DE348C8C"
+        },
+        {
           "defKey": "customer_name",
           "defName": "客户名称",
           "comment": "",
@@ -7379,7 +7450,8 @@
           ],
           "id": "5E096E9C-8315-458E-B18F-4469F331294E"
         }
-      ]
+      ],
+      "notes": {}
     },
     {
       "id": "C1A09B13-A36E-43F8-8937-33D05A268DDD",
@@ -8343,8 +8415,8 @@
           "defKey": "remark",
           "defName": "备注",
           "comment": "",
-          "type": "VARCHAR",
-          "len": 512,
+          "type": "TEXT",
+          "len": "",
           "scale": "",
           "primaryKey": false,
           "notNull": false,
@@ -8526,7 +8598,8 @@
           ],
           "id": "03866170-35C3-4FBD-808D-BF7F665543D6"
         }
-      ]
+      ],
+      "notes": {}
     },
     {
       "id": "205B6728-D054-4F68-9B61-E53C75B500F6",
