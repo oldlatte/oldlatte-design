@@ -4,7 +4,7 @@
   "avatar": "",
   "version": "4.5.1",
   "createdTime": "2021-10-17 14:30:13",
-  "updatedTime": "2023-4-2 15:47:16",
+  "updatedTime": "2023-4-2 17:40:50",
   "profile": {
     "default": {
       "db": "2C17FA15-B29B-498D-A1FB-9C8E7B5A92CD",
@@ -653,7 +653,7 @@
         },
         {
           "defKey": "user_type",
-          "defName": "类型（1：后台，2：商户，3：API）",
+          "defName": "类型（1：后台，2：商户，4：API）",
           "comment": "",
           "type": "",
           "len": "",
@@ -1054,7 +1054,8 @@
           ],
           "id": "078A83A8-CDB5-44EF-BE84-F5692A68F991"
         }
-      ]
+      ],
+      "notes": {}
     },
     {
       "id": "08278BA5-1C7E-489E-9EB6-2D78D6822104",
@@ -9595,8 +9596,8 @@
     "mappings": [
       {
         "defKey": "string",
-        "defName": "字串",
         "id": "BAAB8D9D-DDEA-425D-8766-CCEEF94680BB",
+        "defName": "字串",
         "2C17FA15-B29B-498D-A1FB-9C8E7B5A92CD": "VARCHAR",
         "EAC6B1B8-230A-41F9-8D68-2D021B1C3B83": "VARCHAR2",
         "6856C2B5-1E10-4382-95B0-8F6E605D1731": "VARCHAR",
@@ -9611,8 +9612,8 @@
       },
       {
         "defKey": "double",
-        "defName": "小数",
         "id": "62DC4F12-0609-471B-A0B6-AFEF7AA3F45E",
+        "defName": "小数",
         "2C17FA15-B29B-498D-A1FB-9C8E7B5A92CD": "DECIMAL",
         "EAC6B1B8-230A-41F9-8D68-2D021B1C3B83": "DECIMAL",
         "6856C2B5-1E10-4382-95B0-8F6E605D1731": "DECIMAL",
@@ -9627,8 +9628,8 @@
       },
       {
         "defKey": "int",
-        "defName": "整数",
         "id": "F74C196C-FB7F-4B9D-BE04-65EE538F1277",
+        "defName": "整数",
         "2C17FA15-B29B-498D-A1FB-9C8E7B5A92CD": "INT",
         "EAC6B1B8-230A-41F9-8D68-2D021B1C3B83": "INT",
         "6856C2B5-1E10-4382-95B0-8F6E605D1731": "INT",
@@ -9643,8 +9644,8 @@
       },
       {
         "defKey": "date",
-        "defName": "日期",
         "id": "42A6A1E0-5A13-44CD-BC67-18EDFEDEAAB9",
+        "defName": "日期",
         "2C17FA15-B29B-498D-A1FB-9C8E7B5A92CD": "DATETIME",
         "EAC6B1B8-230A-41F9-8D68-2D021B1C3B83": "DATE",
         "6856C2B5-1E10-4382-95B0-8F6E605D1731": "DATETIME",
@@ -9659,8 +9660,8 @@
       },
       {
         "defKey": "bytes",
-        "defName": "二进制",
         "id": "72F8716B-80D5-484C-9741-1FB441D704D7",
+        "defName": "二进制",
         "2C17FA15-B29B-498D-A1FB-9C8E7B5A92CD": "BLOB",
         "EAC6B1B8-230A-41F9-8D68-2D021B1C3B83": "BLOB",
         "6856C2B5-1E10-4382-95B0-8F6E605D1731": "VARBINARY",
@@ -9675,8 +9676,8 @@
       },
       {
         "defKey": "largeText",
-        "defName": "大文本",
         "id": "EDC78D92-E27D-491F-B659-150D3865F114",
+        "defName": "大文本",
         "2C17FA15-B29B-498D-A1FB-9C8E7B5A92CD": "TEXT",
         "EAC6B1B8-230A-41F9-8D68-2D021B1C3B83": "CLOB",
         "6856C2B5-1E10-4382-95B0-8F6E605D1731": "TEXT",
