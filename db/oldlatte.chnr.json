@@ -4,7 +4,7 @@
   "avatar": "",
   "version": "4.5.1",
   "createdTime": "2021-10-17 14:30:13",
-  "updatedTime": "2023-4-2 23:43:37",
+  "updatedTime": "2023-4-3 05:03:16",
   "profile": {
     "default": {
       "db": "2C17FA15-B29B-498D-A1FB-9C8E7B5A92CD",
@@ -3985,7 +3985,7 @@
           "len": 32,
           "scale": "",
           "primaryKey": false,
-          "notNull": true,
+          "notNull": false,
           "autoIncrement": false,
           "defaultValue": "",
           "hideInGraph": false,
@@ -4017,7 +4017,7 @@
           "len": "",
           "scale": "",
           "primaryKey": false,
-          "notNull": true,
+          "notNull": false,
           "autoIncrement": false,
           "defaultValue": "",
           "hideInGraph": false,
@@ -8040,6 +8040,23 @@
           "id": "33EB61DC-36AC-4FA6-8477-9289CBC1A76D"
         },
         {
+          "defKey": "full_name",
+          "defName": "全名",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "76226FC7-D6C4-496D-94D9-4B8B4F56F476",
+          "id": "F1359B26-3C85-44CA-94FD-8E7DD01AC5E6"
+        },
+        {
           "defKey": "remark",
           "defName": "备注",
           "comment": "",
@@ -8231,7 +8248,8 @@
           ],
           "id": "32347778-FD58-42EA-927E-BD1F42E49F96"
         }
-      ]
+      ],
+      "notes": {}
     },
     {
       "id": "48002AC1-1F3A-4E3E-BE0C-69AC9938A179",
