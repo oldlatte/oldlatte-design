@@ -4,7 +4,7 @@
   "avatar": "",
   "version": "4.5.1",
   "createdTime": "2021-10-17 14:30:13",
-  "updatedTime": "2023-4-2 20:53:27",
+  "updatedTime": "2023-4-2 23:43:37",
   "profile": {
     "default": {
       "db": "2C17FA15-B29B-498D-A1FB-9C8E7B5A92CD",
@@ -4760,6 +4760,23 @@
           "id": "7CB969CB-1EC7-4574-8430-177F336B1B18"
         },
         {
+          "defKey": "storehouse_type",
+          "defName": "仓库类型（10：初始仓库，20：普通仓库）",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "20",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "25878A9D-A80D-4A1B-9299-07464788CC7F"
+        },
+        {
           "defKey": "storehouse_no",
           "defName": "仓库编号",
           "comment": "",
@@ -4978,7 +4995,8 @@
           ],
           "id": "C10C7BCA-DB07-4B6E-8F0D-DA28B56AAC8B"
         }
-      ]
+      ],
+      "notes": {}
     },
     {
       "id": "C8005997-652A-46F2-874B-56226E7AABBE",
