@@ -4,7 +4,7 @@
   "avatar": "",
   "version": "4.5.1",
   "createdTime": "2021-10-17 14:30:13",
-  "updatedTime": "2023-4-3 23:22:07",
+  "updatedTime": "2023-4-4 22:59:19",
   "profile": {
     "default": {
       "db": "2C17FA15-B29B-498D-A1FB-9C8E7B5A92CD",
@@ -5108,6 +5108,23 @@
           "id": "C70E9DC5-1D07-4C31-B867-33910786134D"
         },
         {
+          "defKey": "merchant_id",
+          "defName": "商户id",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "F4E4F853-CA56-42F6-BE21-E762AE6B5EC7"
+        },
+        {
           "defKey": "storehouse_id",
           "defName": "仓库id",
           "comment": "",
@@ -5342,7 +5359,8 @@
           ],
           "id": "B4E5B6BB-BA76-4B10-BF47-B83053867A3F"
         }
-      ]
+      ],
+      "notes": {}
     },
     {
       "id": "FA55B349-8254-40CE-8960-B5AABC9BC40B",
