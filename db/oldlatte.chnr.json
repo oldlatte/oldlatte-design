@@ -4,7 +4,7 @@
   "avatar": "",
   "version": "4.5.1",
   "createdTime": "2021-10-17 14:30:13",
-  "updatedTime": "2023-4-4 22:59:19",
+  "updatedTime": "2023-4-5 16:26:15",
   "profile": {
     "default": {
       "db": "2C17FA15-B29B-498D-A1FB-9C8E7B5A92CD",
@@ -14042,6 +14042,364 @@
         }
       ],
       "correlations": []
+    },
+    {
+      "id": "BF870545-4C4E-4290-91E5-3BEFCC475045",
+      "env": {
+        "base": {
+          "nameSpace": "",
+          "codeRoot": ""
+        }
+      },
+      "defKey": "merchant_printer",
+      "defName": "商户打印机表",
+      "comment": "",
+      "properties": {
+        "deleted_flag": "0",
+        "revision": "0"
+      },
+      "nameTemplate": "{defKey}[{defName}]",
+      "notes": {},
+      "headers": [
+        {
+          "refKey": "hideInGraph",
+          "hideInGraph": true
+        },
+        {
+          "refKey": "defKey",
+          "freeze": false,
+          "hideInGraph": false
+        },
+        {
+          "refKey": "defName",
+          "freeze": false,
+          "hideInGraph": false
+        },
+        {
+          "refKey": "primaryKey",
+          "freeze": false,
+          "hideInGraph": false
+        },
+        {
+          "refKey": "notNull",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "autoIncrement",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "domain",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "type",
+          "freeze": false,
+          "hideInGraph": false
+        },
+        {
+          "refKey": "len",
+          "freeze": false,
+          "hideInGraph": false
+        },
+        {
+          "refKey": "scale",
+          "freeze": false,
+          "hideInGraph": false
+        },
+        {
+          "refKey": "comment",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "refDict",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "defaultValue",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "isStandard",
+          "freeze": false,
+          "hideInGraph": false
+        },
+        {
+          "refKey": "uiHint",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "extProps",
+          "freeze": false,
+          "hideInGraph": true
+        }
+      ],
+      "fields": [
+        {
+          "defKey": "printer_id",
+          "defName": "打印机id",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": true,
+          "notNull": true,
+          "autoIncrement": true,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "4439EC4F-2BE5-4AED-8CDE-4FFA77210C70"
+        },
+        {
+          "defKey": "merchant_id",
+          "defName": "商户id",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "E1FD0978-C450-49D9-AF84-EC31885B92F4"
+        },
+        {
+          "defKey": "printer_type",
+          "defName": "打印机类型（1: lk）",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "4FC8997A-906E-4928-96B5-ECEC72E8531E"
+        },
+        {
+          "defKey": "printer_name",
+          "defName": "打印机名称",
+          "comment": "",
+          "type": "VARCHAR",
+          "len": 32,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "",
+          "id": "4AB8603F-B35C-4CD0-9359-C84C595A3FDA"
+        },
+        {
+          "defKey": "printer_ak",
+          "defName": "打印机ak",
+          "comment": "",
+          "type": "VARCHAR",
+          "len": 32,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "",
+          "id": "EBC7AEBF-7641-4498-8AA7-56C9B5C86841"
+        },
+        {
+          "defKey": "printer_sk",
+          "defName": "打印机sk",
+          "comment": "",
+          "type": "VARCHAR",
+          "len": 32,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "",
+          "id": "EEBCBA98-1FE0-4E62-B96E-08B79C990929"
+        },
+        {
+          "defKey": "default_flag",
+          "defName": "默认标识（0：否，1：是）",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "6701B882-6051-4371-924E-E70E5B05C5CA"
+        },
+        {
+          "defKey": "remark",
+          "defName": "备注",
+          "comment": "",
+          "type": "VARCHAR",
+          "len": 512,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": true,
+          "refDict": "",
+          "domain": "",
+          "id": "E261F390-1B6C-4675-8438-D235EDBE589C",
+          "uiHint": ""
+        },
+        {
+          "defKey": "revision",
+          "defName": "版本（乐观锁）",
+          "comment": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "0",
+          "hideInGraph": true,
+          "refDict": "",
+          "uiHint": "",
+          "id": "5CE80B29-A06C-4210-9FC8-ECDD4AEC55D1"
+        },
+        {
+          "defKey": "created_by",
+          "defName": "创建人",
+          "comment": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": true,
+          "refDict": "",
+          "uiHint": "",
+          "id": "6E8F4781-E90F-452B-8051-76C4953BCD3A"
+        },
+        {
+          "defKey": "created_time",
+          "defName": "创建时间",
+          "comment": "",
+          "domain": "74487A3C-AB82-4011-A047-F88E5147E78B",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": true,
+          "refDict": "",
+          "uiHint": "",
+          "id": "121B413B-468C-438C-841D-82529BDACA9D"
+        },
+        {
+          "defKey": "updated_by",
+          "defName": "更新人",
+          "comment": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": true,
+          "refDict": "",
+          "uiHint": "",
+          "id": "0384A19D-4DE7-4AEF-B611-02F81CF004DD"
+        },
+        {
+          "defKey": "updated_time",
+          "defName": "更新时间",
+          "comment": "",
+          "domain": "74487A3C-AB82-4011-A047-F88E5147E78B",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": true,
+          "refDict": "",
+          "uiHint": "",
+          "id": "517A9832-3E39-41A0-9248-2578CE64B521"
+        },
+        {
+          "defKey": "tenant_id",
+          "defName": "租户id",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "0",
+          "hideInGraph": true,
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "refDict": "",
+          "uiHint": "",
+          "id": "F17F1378-F21F-4F4F-91D3-335D770312A2"
+        },
+        {
+          "defKey": "deleted_flag",
+          "defName": "删除标识（0：否，1：是）",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "0",
+          "hideInGraph": true,
+          "refDict": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "26BEBD22-9528-4918-9444-21CD6EA15454",
+          "uiHint": ""
+        }
+      ],
+      "correlations": [],
+      "indexes": []
     }
   ],
   "views": [],
@@ -14083,7 +14441,8 @@
         "86248ADD-D993-431F-BAB8-809CA9366408",
         "8C7ED62B-C5BC-4F98-B5C9-4F8BC166E5E0",
         "4A967928-E53A-46B6-90A3-5B2C36DC720A",
-        "0BB71473-ECF0-46C2-A15A-87D3F048BEF9"
+        "0BB71473-ECF0-46C2-A15A-87D3F048BEF9",
+        "BF870545-4C4E-4290-91E5-3BEFCC475045"
       ],
       "refViews": [],
       "refDiagrams": [
