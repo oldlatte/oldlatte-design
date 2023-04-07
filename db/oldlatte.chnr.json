@@ -4,7 +4,7 @@
   "avatar": "",
   "version": "4.5.1",
   "createdTime": "2021-10-17 14:30:13",
-  "updatedTime": "2023-4-5 16:26:15",
+  "updatedTime": "2023-4-8 01:30:06",
   "profile": {
     "default": {
       "db": "2C17FA15-B29B-498D-A1FB-9C8E7B5A92CD",
@@ -3622,6 +3622,23 @@
           "id": "C89990C3-C1AA-47E6-A1E7-71F39ED220FB"
         },
         {
+          "defKey": "production_time",
+          "defName": "生产日期",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "74487A3C-AB82-4011-A047-F88E5147E78B",
+          "id": "7B51BCCD-F0C8-4241-BCE0-1B2A6AC078E7"
+        },
+        {
           "defKey": "ext_info",
           "defName": "扩展信息（json）",
           "comment": "",
@@ -5930,6 +5947,23 @@
           "id": "3CB80B79-81B9-41EF-A57E-4CCAAFCF4124"
         },
         {
+          "defKey": "expiration_day",
+          "defName": "保质期（天）",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "55B262FB-B5D2-47A5-9855-4AD3170343CA"
+        },
+        {
           "defKey": "remark",
           "defName": "备注",
           "comment": "",
@@ -6116,7 +6150,8 @@
           ],
           "id": "FA4A89A7-E2A0-4EE5-BCC7-8B5DD38E5AD4"
         }
-      ]
+      ],
+      "notes": {}
     },
     {
       "id": "887F9556-9737-4154-BD4C-1B421FFA0CFD",
@@ -10885,8 +10920,8 @@
           "defKey": "avatar_file_group_id",
           "defName": "头像图片id",
           "comment": "",
-          "domain": "76226FC7-D6C4-496D-94D9-4B8B4F56F476",
-          "type": "VARCHAR",
+          "domain": "",
+          "type": "BIGINT",
           "len": "",
           "scale": "",
           "primaryKey": false,
@@ -10911,7 +10946,7 @@
           "defKey": "district_id",
           "defName": "地区",
           "comment": "",
-          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "domain": "",
           "type": "INT",
           "len": "",
           "scale": "",
@@ -11252,7 +11287,8 @@
           "hideInGraph": true
         }
       ],
-      "correlations": []
+      "correlations": [],
+      "notes": {}
     },
     {
       "id": "DB382EAD-7B91-4DB4-8D45-AC77975F3306",
