@@ -4,7 +4,7 @@
   "avatar": "",
   "version": "4.5.1",
   "createdTime": "2021-10-17 14:30:13",
-  "updatedTime": "2023-4-10 02:52:12",
+  "updatedTime": "2023-4-15 16:13:28",
   "profile": {
     "default": {
       "db": "2C17FA15-B29B-498D-A1FB-9C8E7B5A92CD",
@@ -3620,6 +3620,23 @@
           "refDict": "",
           "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
           "id": "C89990C3-C1AA-47E6-A1E7-71F39ED220FB"
+        },
+        {
+          "defKey": "product_actual_price",
+          "defName": "商品实际金额（单位：分）",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "3130797C-9DFF-4A9B-A553-04209384A217"
         },
         {
           "defKey": "production_time",
