@@ -2,9 +2,9 @@
   "name": "oldlatte",
   "describe": "ER-oldlatte",
   "avatar": "",
-  "version": "4.5.1",
+  "version": "4.4.0",
   "createdTime": "2021-10-17 14:30:13",
-  "updatedTime": "2023-4-15 16:13:28",
+  "updatedTime": "2023-4-16 21:34:07",
   "profile": {
     "default": {
       "db": "2C17FA15-B29B-498D-A1FB-9C8E7B5A92CD",
@@ -3154,6 +3154,23 @@
           "id": "19DE9C11-EBC6-4102-99C6-42ED9FDCD51C"
         },
         {
+          "defKey": "print_count",
+          "defName": "打印次数",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "0",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "5E53FE75-CBE5-4B03-A917-4D8AC9CC6C4E"
+        },
+        {
           "defKey": "ext_info",
           "defName": "扩展信息（json）",
           "comment": "",
@@ -3164,7 +3181,7 @@
           "notNull": false,
           "autoIncrement": false,
           "defaultValue": "",
-          "hideInGraph": false,
+          "hideInGraph": true,
           "refDict": "",
           "domain": "",
           "id": "26EADDEF-8D23-4152-8BC0-2C7AC4279010"
@@ -14470,6 +14487,304 @@
       ],
       "correlations": [],
       "indexes": []
+    },
+    {
+      "id": "8AE6D9BD-A4C8-4C57-BE0C-09E680DFF545",
+      "defKey": "sys_protocol",
+      "defName": "协议文档",
+      "comment": "",
+      "properties": {},
+      "fields": [
+        {
+          "defKey": "protocol_id",
+          "defName": "协议ID",
+          "comment": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "type": "INT",
+          "len": "",
+          "scale": "",
+          "primaryKey": true,
+          "notNull": true,
+          "autoIncrement": true,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "id": "20A2F19B-AA66-4735-BAE2-909A451DCB25",
+          "extProps": {}
+        },
+        {
+          "defKey": "protocol_name",
+          "defName": "协议名称",
+          "comment": "",
+          "domain": "76226FC7-D6C4-496D-94D9-4B8B4F56F476",
+          "type": "VARCHAR",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "id": "CA9D48F2-0DBC-4C21-900B-14B02A922382",
+          "extProps": {}
+        },
+        {
+          "defKey": "protocol_type",
+          "defName": "协议类型",
+          "comment": "",
+          "domain": "7D6DFD89-A8C3-4C45-ABEB-B14001F5E85A",
+          "type": "VARCHAR",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "id": "5C3D1700-D5CF-4521-A70D-861D1EDBFCBE",
+          "extProps": {}
+        },
+        {
+          "defKey": "content",
+          "defName": "内容",
+          "comment": "",
+          "domain": "",
+          "type": "VARCHAR",
+          "len": 4096,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "id": "C7B248D6-1124-4319-BF0B-814FB1C33E2F",
+          "extProps": {}
+        },
+        {
+          "defKey": "remark",
+          "defName": "备注",
+          "comment": "",
+          "domain": "",
+          "type": "VARCHAR",
+          "len": 512,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "id": "B4AB4497-A498-4113-A23A-0FC415DB8360",
+          "extProps": {}
+        },
+        {
+          "defKey": "revision",
+          "defName": "版本（乐观锁）",
+          "comment": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "type": "INT",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "0",
+          "hideInGraph": false,
+          "refDict": "",
+          "id": "0146C94B-0DDF-4DDF-928C-7F06E04D7A12",
+          "extProps": {}
+        },
+        {
+          "defKey": "created_by",
+          "defName": "创建人",
+          "comment": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "type": "INT",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "id": "C782F516-929C-4C9E-8659-01AFDDD2C7A5",
+          "extProps": {}
+        },
+        {
+          "defKey": "created_time",
+          "defName": "创建时间",
+          "comment": "",
+          "domain": "74487A3C-AB82-4011-A047-F88E5147E78B",
+          "type": "DATETIME",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "id": "57E82E42-24E5-4D97-8D32-EF05BF35C7F8",
+          "extProps": {}
+        },
+        {
+          "defKey": "updated_by",
+          "defName": "更新人",
+          "comment": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "type": "INT",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "id": "74FFC7A0-6990-4DD7-B919-2D0285CF4422",
+          "extProps": {}
+        },
+        {
+          "defKey": "updated_time",
+          "defName": "更新时间",
+          "comment": "",
+          "domain": "74487A3C-AB82-4011-A047-F88E5147E78B",
+          "type": "DATETIME",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "id": "6EF7F1B6-355F-4481-94FE-3D55386B04CE",
+          "extProps": {}
+        },
+        {
+          "defKey": "tenant_id",
+          "defName": "租户id",
+          "comment": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "type": "INT",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "0",
+          "hideInGraph": false,
+          "refDict": "",
+          "id": "1C82561F-0440-48A2-A109-86EDFBA27359",
+          "extProps": {}
+        },
+        {
+          "defKey": "deleted_flag",
+          "defName": "删除标识（0：否，1：是）",
+          "comment": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "type": "INT",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "0",
+          "hideInGraph": false,
+          "refDict": "",
+          "id": "3C3D5786-3B7D-495D-A207-EC8F60082B51",
+          "extProps": {}
+        }
+      ],
+      "indexes": [],
+      "nameTemplate": "{defKey}[{defName}]",
+      "headers": [
+        {
+          "freeze": false,
+          "refKey": "hideInGraph",
+          "hideInGraph": true
+        },
+        {
+          "freeze": true,
+          "refKey": "defKey",
+          "hideInGraph": false
+        },
+        {
+          "freeze": true,
+          "refKey": "defName",
+          "hideInGraph": false
+        },
+        {
+          "freeze": false,
+          "refKey": "primaryKey",
+          "hideInGraph": false
+        },
+        {
+          "freeze": false,
+          "refKey": "notNull",
+          "hideInGraph": true
+        },
+        {
+          "freeze": false,
+          "refKey": "autoIncrement",
+          "hideInGraph": true
+        },
+        {
+          "freeze": false,
+          "refKey": "domain",
+          "hideInGraph": true
+        },
+        {
+          "freeze": false,
+          "refKey": "type",
+          "hideInGraph": false
+        },
+        {
+          "freeze": false,
+          "refKey": "len",
+          "hideInGraph": false
+        },
+        {
+          "freeze": false,
+          "refKey": "scale",
+          "hideInGraph": false
+        },
+        {
+          "freeze": false,
+          "refKey": "comment",
+          "hideInGraph": true
+        },
+        {
+          "freeze": false,
+          "refKey": "refDict",
+          "hideInGraph": true
+        },
+        {
+          "freeze": false,
+          "refKey": "defaultValue",
+          "hideInGraph": true
+        },
+        {
+          "freeze": false,
+          "refKey": "isStandard",
+          "hideInGraph": false
+        },
+        {
+          "freeze": false,
+          "refKey": "uiHint",
+          "hideInGraph": true
+        },
+        {
+          "freeze": false,
+          "refKey": "extProps",
+          "hideInGraph": true
+        }
+      ],
+      "correlations": []
     }
   ],
   "views": [],
