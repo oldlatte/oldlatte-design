@@ -4,7 +4,7 @@
   "avatar": "",
   "version": "4.5.1",
   "createdTime": "2021-10-17 14:30:13",
-  "updatedTime": "2023-4-15 16:13:28",
+  "updatedTime": "2023-4-16 16:38:53",
   "profile": {
     "default": {
       "db": "2C17FA15-B29B-498D-A1FB-9C8E7B5A92CD",
@@ -3152,6 +3152,23 @@
           "refDict": "",
           "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
           "id": "19DE9C11-EBC6-4102-99C6-42ED9FDCD51C"
+        },
+        {
+          "defKey": "print_count",
+          "defName": "打印次数",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "0",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "5E53FE75-CBE5-4B03-A917-4D8AC9CC6C4E"
         },
         {
           "defKey": "ext_info",
