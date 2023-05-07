@@ -4,7 +4,7 @@
   "avatar": "",
   "version": "4.5.1",
   "createdTime": "2021-10-17 14:30:13",
-  "updatedTime": "2023-4-29 21:07:15",
+  "updatedTime": "2023-5-7 15:54:52",
   "profile": {
     "default": {
       "db": "2C17FA15-B29B-498D-A1FB-9C8E7B5A92CD",
@@ -14785,6 +14785,430 @@
         }
       ],
       "correlations": []
+    },
+    {
+      "id": "48F0900D-3541-4EBE-9E9B-343F673B866F",
+      "env": {
+        "base": {
+          "nameSpace": "",
+          "codeRoot": ""
+        }
+      },
+      "defKey": "sys_sms",
+      "defName": "短信信息表",
+      "comment": "",
+      "properties": {
+        "deleted_flag": "0",
+        "revision": "0"
+      },
+      "nameTemplate": "{defKey}[{defName}]",
+      "notes": {},
+      "headers": [
+        {
+          "refKey": "hideInGraph",
+          "hideInGraph": true
+        },
+        {
+          "refKey": "defKey",
+          "freeze": false,
+          "hideInGraph": false
+        },
+        {
+          "refKey": "defName",
+          "freeze": false,
+          "hideInGraph": false
+        },
+        {
+          "refKey": "primaryKey",
+          "freeze": false,
+          "hideInGraph": false
+        },
+        {
+          "refKey": "notNull",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "autoIncrement",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "domain",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "type",
+          "freeze": false,
+          "hideInGraph": false
+        },
+        {
+          "refKey": "len",
+          "freeze": false,
+          "hideInGraph": false
+        },
+        {
+          "refKey": "scale",
+          "freeze": false,
+          "hideInGraph": false
+        },
+        {
+          "refKey": "comment",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "refDict",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "defaultValue",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "isStandard",
+          "freeze": false,
+          "hideInGraph": false
+        },
+        {
+          "refKey": "uiHint",
+          "freeze": false,
+          "hideInGraph": true
+        },
+        {
+          "refKey": "extProps",
+          "freeze": false,
+          "hideInGraph": true
+        }
+      ],
+      "fields": [
+        {
+          "defKey": "sms_id",
+          "defName": "短信id",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": true,
+          "notNull": true,
+          "autoIncrement": true,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "B175DA9F-6630-487C-ADD2-133DF5B70677"
+        },
+        {
+          "defKey": "user_id",
+          "defName": "用户id",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "BB176F6A-CF5F-4E49-8351-6955D5C7DE4C"
+        },
+        {
+          "defKey": "phone_no",
+          "defName": "手机号",
+          "comment": "",
+          "type": "VARCHAR",
+          "len": 32,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "",
+          "id": "54574887-A11B-4429-A421-0E93A66E3B55"
+        },
+        {
+          "defKey": "sms_code",
+          "defName": "短信验证码",
+          "comment": "",
+          "type": "VARCHAR",
+          "len": 32,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "",
+          "id": "2E3BFA5C-FE0D-4382-A0C5-502FEEDC48DE"
+        },
+        {
+          "defKey": "sms_query_id",
+          "defName": "短信查询id",
+          "comment": "",
+          "type": "VARCHAR",
+          "len": 32,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "",
+          "id": "CB8D82E4-DE6B-44C4-82D6-385837824561"
+        },
+        {
+          "defKey": "send_expire",
+          "defName": "发送过期时间",
+          "comment": "",
+          "type": "BIGINT",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "",
+          "id": "952C454C-ADFC-47E3-8ADF-0D3ADE1A7AD8"
+        },
+        {
+          "defKey": "send_status",
+          "defName": "发送状态(1:待发送、1x:发送失败、2x:发送成功、3x:发送终止)",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "B4083B0E-9780-4131-81A7-5F7026740387"
+        },
+        {
+          "defKey": "send_msg",
+          "defName": "发送信息(1:待发送、1x:发送失败、2x:发送成功、3x:发送终止)",
+          "comment": "",
+          "type": "TEXT",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "",
+          "id": "9500E5AC-F0D2-44E3-A4F7-9600349355B4"
+        },
+        {
+          "defKey": "remark",
+          "defName": "备注",
+          "comment": "",
+          "type": "VARCHAR",
+          "len": 512,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": true,
+          "refDict": "",
+          "domain": "",
+          "id": "EA38EB2D-DF67-421F-B260-FB5BC70C5004",
+          "uiHint": ""
+        },
+        {
+          "defKey": "revision",
+          "defName": "版本（乐观锁）",
+          "comment": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "0",
+          "hideInGraph": true,
+          "refDict": "",
+          "uiHint": "",
+          "id": "E7F346C6-358F-4778-BCBD-6DE319510908"
+        },
+        {
+          "defKey": "created_by",
+          "defName": "创建人",
+          "comment": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": true,
+          "refDict": "",
+          "uiHint": "",
+          "id": "5BAF6152-AF0F-4D84-B44E-3B2EAB34E46D"
+        },
+        {
+          "defKey": "created_time",
+          "defName": "创建时间",
+          "comment": "",
+          "domain": "74487A3C-AB82-4011-A047-F88E5147E78B",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": true,
+          "refDict": "",
+          "uiHint": "",
+          "id": "CAC60940-D70D-443A-B342-D3698AD33266"
+        },
+        {
+          "defKey": "updated_by",
+          "defName": "更新人",
+          "comment": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": true,
+          "refDict": "",
+          "uiHint": "",
+          "id": "18BA34D5-D0A2-4F5D-82DB-2F88DDB6DCB0"
+        },
+        {
+          "defKey": "updated_time",
+          "defName": "更新时间",
+          "comment": "",
+          "domain": "74487A3C-AB82-4011-A047-F88E5147E78B",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": true,
+          "refDict": "",
+          "uiHint": "",
+          "id": "46A144EF-4AD7-48D4-BE49-48EAB776F183"
+        },
+        {
+          "defKey": "tenant_id",
+          "defName": "租户id",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "0",
+          "hideInGraph": true,
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "refDict": "",
+          "uiHint": "",
+          "id": "F134A6F7-E159-4E74-A52D-4BE0F4E11847"
+        },
+        {
+          "defKey": "deleted_flag",
+          "defName": "删除标识（0：否，1：是）",
+          "comment": "",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "0",
+          "hideInGraph": true,
+          "refDict": "",
+          "domain": "FE9E793F-6965-44A5-BA91-B2183E51F018",
+          "id": "BA9626B7-89FD-4069-BD3E-D9129C1DDF70",
+          "uiHint": ""
+        }
+      ],
+      "correlations": [],
+      "indexes": [
+        {
+          "defKey": "idx_user_id",
+          "defName": null,
+          "unique": false,
+          "comment": "",
+          "fields": [
+            {
+              "fieldDefKey": "BB176F6A-CF5F-4E49-8351-6955D5C7DE4C",
+              "ascOrDesc": "A",
+              "id": "74584004-8931-4845-8688-824E048F577B"
+            },
+            {
+              "fieldDefKey": "F134A6F7-E159-4E74-A52D-4BE0F4E11847",
+              "ascOrDesc": "A",
+              "id": "3F7C1155-6E98-4DC9-9C62-0ABFFF11DCC9"
+            },
+            {
+              "fieldDefKey": "BA9626B7-89FD-4069-BD3E-D9129C1DDF70",
+              "ascOrDesc": "A",
+              "id": "2714B3CF-117D-4097-B3D2-2DC24648BD4E"
+            }
+          ],
+          "id": "6B88AB12-3C2A-478F-A983-AB7F7064F962"
+        },
+        {
+          "defKey": "idx_phone_no",
+          "defName": null,
+          "unique": false,
+          "comment": "",
+          "fields": [
+            {
+              "fieldDefKey": "54574887-A11B-4429-A421-0E93A66E3B55",
+              "ascOrDesc": "A",
+              "id": "EBF74BFF-3CD6-4A37-A1B3-A45D51645F06"
+            },
+            {
+              "fieldDefKey": "F134A6F7-E159-4E74-A52D-4BE0F4E11847",
+              "ascOrDesc": "A",
+              "id": "4B38D7F0-A923-458F-B112-1161B7755B83"
+            },
+            {
+              "fieldDefKey": "BA9626B7-89FD-4069-BD3E-D9129C1DDF70",
+              "ascOrDesc": "A",
+              "id": "47672D39-E66B-4183-AE0B-CDCFD4785B8E"
+            }
+          ],
+          "id": "80976832-F1E8-4E9E-87AA-D7C8667AE887"
+        }
+      ]
     }
   ],
   "views": [],
@@ -14827,7 +15251,8 @@
         "8C7ED62B-C5BC-4F98-B5C9-4F8BC166E5E0",
         "4A967928-E53A-46B6-90A3-5B2C36DC720A",
         "0BB71473-ECF0-46C2-A15A-87D3F048BEF9",
-        "BF870545-4C4E-4290-91E5-3BEFCC475045"
+        "BF870545-4C4E-4290-91E5-3BEFCC475045",
+        "48F0900D-3541-4EBE-9E9B-343F673B866F"
       ],
       "refViews": [],
       "refDiagrams": [
