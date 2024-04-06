@@ -4,7 +4,7 @@
   "avatar": "",
   "version": "4.5.1",
   "createdTime": "2021-10-17 14:30:13",
-  "updatedTime": "2024-4-6 12:17:46",
+  "updatedTime": "2024-4-7 00:42:22",
   "profile": {
     "default": {
       "db": "2C17FA15-B29B-498D-A1FB-9C8E7B5A92CD",
@@ -6406,6 +6406,23 @@
           "id": "3518803B-46A7-40C3-AB97-F76086ADCBCD"
         },
         {
+          "defKey": "product_unit_group_id",
+          "defName": "商品单位组id",
+          "comment": "",
+          "type": "BIGINT",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "",
+          "id": "90292687-6D56-4757-BD11-79E6814917D3"
+        },
+        {
           "defKey": "product_id",
           "defName": "商品id",
           "comment": "",
@@ -6671,8 +6688,33 @@
             }
           ],
           "id": "27F41230-0715-4033-8935-BF6083FF1882"
+        },
+        {
+          "defKey": "idx_unit_group_id",
+          "defName": null,
+          "unique": false,
+          "comment": "",
+          "fields": [
+            {
+              "fieldDefKey": "90292687-6D56-4757-BD11-79E6814917D3",
+              "ascOrDesc": "A",
+              "id": "7E90C504-1FF5-4B71-864B-B9454CF55901"
+            },
+            {
+              "fieldDefKey": "61BE722A-4A5B-4559-B79F-ED68A681CBD1",
+              "ascOrDesc": "A",
+              "id": "3A8037DC-5268-4A38-88AA-8170383359EC"
+            },
+            {
+              "fieldDefKey": "9205FA03-4185-4C20-AA45-1E451821EC12",
+              "ascOrDesc": "A",
+              "id": "B6EB1AB6-815F-4AF9-8D85-DCD41F831A7C"
+            }
+          ],
+          "id": "139AC774-52F2-43CA-B6E7-774BFF8A198C"
         }
-      ]
+      ],
+      "notes": {}
     },
     {
       "id": "605BA5CB-8E7C-430C-9AC0-B2F5E8DF0600",
