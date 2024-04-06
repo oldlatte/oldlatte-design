@@ -4,7 +4,7 @@
   "avatar": "",
   "version": "4.5.1",
   "createdTime": "2021-10-17 14:30:13",
-  "updatedTime": "2023-5-7 15:54:52",
+  "updatedTime": "2024-4-6 11:49:13",
   "profile": {
     "default": {
       "db": "2C17FA15-B29B-498D-A1FB-9C8E7B5A92CD",
@@ -668,6 +668,23 @@
           "id": "5EF96AD9-A3B5-48A8-A743-67C97F1727D8"
         },
         {
+          "defKey": "wechat_union_id",
+          "defName": "微信union_id",
+          "comment": "",
+          "type": "VARCHAR",
+          "len": 32,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "refDict": "",
+          "extProps": {},
+          "domain": "",
+          "id": "7E07B6C1-B175-4BC6-A69A-2BD0A5748DD8"
+        },
+        {
           "defKey": "wechat_program_open_id",
           "defName": "微信小程序open_id",
           "comment": "",
@@ -1053,6 +1070,30 @@
             }
           ],
           "id": "078A83A8-CDB5-44EF-BE84-F5692A68F991"
+        },
+        {
+          "defKey": "idx_union_id",
+          "defName": null,
+          "unique": true,
+          "comment": "微信unionId索引",
+          "fields": [
+            {
+              "fieldDefKey": "7E07B6C1-B175-4BC6-A69A-2BD0A5748DD8",
+              "ascOrDesc": "A",
+              "id": "4CD91EFC-28DE-4DFC-8904-7A868A2BFCF0"
+            },
+            {
+              "fieldDefKey": "920BB3D7-0ABC-4983-A49A-19BF6268E44C",
+              "ascOrDesc": "A",
+              "id": "A7A44FCB-2271-4F41-8BEA-D0D7E5A8F47F"
+            },
+            {
+              "fieldDefKey": "B0272ECE-B761-4EEF-A6C8-6027BB573A5A",
+              "ascOrDesc": "A",
+              "id": "AD4D68D7-E53D-40F6-8032-0ECE8DE6556B"
+            }
+          ],
+          "id": "1DCED643-EEB5-4468-8943-882AB2AC57BE"
         }
       ],
       "notes": {}
