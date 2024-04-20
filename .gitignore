@@ -24,3 +24,6 @@ hs_err_pid*
 
 # Temp file
 *-backup-*.chnr.json
+db/.back_*
+.idea/
+.DS_Store
